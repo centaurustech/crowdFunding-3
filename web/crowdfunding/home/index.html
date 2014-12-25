@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>首页</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+<!--<link href="fullpage/css/jquery.fullPage.css" rel="stylesheet" type="text/css">-->
+<script type="text/javascript" src="bootstrap/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="fullpage/js/jquery.fullPage.js"></script>-->
+<!--<script type="text/javascript" src="fullpage/js/jquery.fullPage.min.js"></script>-->
+
+</head>
+
+<body>
+<!-- 导航 -->
+<div id="header">
+	<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12" id="topnav">
+		<div class="col-lg-6 col-sm-6 col-md-6 col-lg-offset-3 col-sm-offset-1 col-md-offset-1 hidden-md hidden-sm hidden-xs topnavDiv">
+			<span class="col-lg-2 col-sm-2 col-md-2"></span>
+			<a class="col-lg-2 col-sm-2 col-md-2 col onNav" href="#">首页</a>
+			<a class="col-lg-2 col-sm-2 col-md-2 col" href="#">浏览项目</a>
+			<a class="col-lg-2 col-sm-2 col-md-2 col" href="#">发起项目</a>
+			<a class="col_text">北京</a>
+			<a class="col_text">[城市切换]</a>
+
+		</div>
+		<div>
+		</div>
+		<div id="login" class="col-lg-3 col-sm-12 col-md-12 col-xs-12">
+			<a href="#" style="padding-right:10px;">登录</a>
+			<span>|</span>
+			<a href="#" style="padding-left:10px;">注册</a>
+		</div>
+	</div>
+</div>
+<div id="fullpage">
+	<!-- 首屏 -->
+	<div class="section section_index">
+		<div class="container-fluid" style="padding:0px; margin-top: 0px;">
+
+			<div class="sindex_bg">
+				<img id="responsive_img" style="width: 1920px;" src="img/index.png"/>
+			</div>
+            <div class="sindex_banner_logo">
+                <div class="sindex_project">
+                    <div class="sindex_img_bg sindex_logo"></div>
+                </div>
+                <div class="sindex_item">
+                    <div class="sitem sitem_prnum">
+                        <div class="sindex_img_bg sitem_prnum_1"></div>
+                        <div class="sindex_img_bg sitem_prnum_2 s_top"></div>
+                        <div class="sindex_img_bg sitem_prnum_3 s_top"></div>
+                    </div>
+                    <div class="sindex_img_bg sitem sitem1 sitem_pr_text"></div>
+                    <div class="sitem sitem_mnum">
+                        <div class="sindex_img_bg sitem_mnum_1"></div>
+                        <div class="sindex_img_bg sitem_mnum_2 s_top"></div>
+                        <div class="sindex_img_bg sitem_mnum_3 s_top"></div>
+                    </div>
+                    <div class="sindex_img_bg sitem sitem1 sitem_mnum_text"></div>
+                    <div class="sitem sitem_apnum">
+                        <div class="sindex_img_bg sitem_apnum_1"></div>
+                        <div class="sindex_img_bg sitem_apnum_2"></div>
+                    </div>
+                    <div class="sindex_img_bg sitem sitem1 sitem_apnum_text"></div>
+                    <div class="sindex_img_bg sitem sitem_smonty"></div>
+                    <div class="sindex_img_bg sitem sitem1 sitem_smonty_text"></div>
+                </div>
+            </div>
+
+		</div>
+	</div>
+	<!-- 首屏 END -->
+	<div class="section section_com">
+		<div class="scom_product">
+			<div class="spt_classify">
+				<div class="productDiv">
+					<span class="col-lg-2">所有：</span>
+					<ul class="nav nav-pills" role="tablist">
+						<li role="presentation"><a href="#">预热中</a></li>
+						<li role="presentation"><a href="#">融资中</a></li>
+					    <li role="presentation"><a href="#">已成功</a></li>
+					</ul>
+				</div>
+				<div class="productDiv">
+					<span class="col-lg-2">行业分类：</span>
+					<ul class="nav nav-pills" role="tablist">
+						<li role="presentation"><a href="#">所属地区</a></li>
+						<li role="presentation"><a href="#">资金规模</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="spt_sort">
+				<div class="productDiv">
+					<span class="col-lg-2">全部排序：</span>
+					<ul class="nav nav-pills" role="tablist">
+						<li role="presentation"><a href="#">最新发布</a></li>
+						<li role="presentation"><a href="#">热门项目</a></li>
+						<li role="presentation"><a href="#">融资金额</a></li>
+						<li role="presentation"><a href="#">融资金额</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="spt_list">
+				<div class="spt_list_div">
+					<img src="img/list.png"/>
+					<span>北京红叶拾楠咖啡店</span>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+					<div style="overflow: hidden; padding-left: 8px;padding-right: 15px;">
+						<span style="float: left; ">已达60%</span>
+						<span style="float: right;">￥1,500,000</span>
+					</div>
+					<button type="button" class="btn btn-primary">融资中</button>
+				</div>
+				<div class="spt_list_div">
+					<img src="img/list.png"/>
+					<span>北京红叶拾楠咖啡店</span>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+					<div style="overflow: hidden; padding-left: 8px;padding-right: 15px;">
+						<span style="float: left; ">已达60%</span>
+						<span style="float: right;">￥1,500,000</span>
+					</div>
+					<button type="button" class="btn btn-primary">融资中</button>
+				</div>
+				<div class="spt_list_div">
+					<img src="img/list.png"/>
+					<span>北京红叶拾楠咖啡店</span>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+					<div style="overflow: hidden; padding-left: 8px;padding-right: 15px;">
+						<span style="float: left; ">已达60%</span>
+						<span style="float: right;">￥1,500,000</span>
+					</div>
+					<button type="button" class="btn btn-primary">融资中</button>
+				</div>
+				<div class="spt_list_div spt_list_div_mar">
+					<img src="img/list.png"/>
+					<span>北京红叶拾楠咖啡店</span>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+					<div style="overflow: hidden; padding-left: 8px;padding-right: 15px;">
+						<span style="float: left; ">已达60%</span>
+						<span style="float: right;">￥1,500,000</span>
+					</div>
+					<button type="button" class="btn btn-primary">融资中</button>
+				</div>
+				<div class="spt_list_div">
+					<img src="img/list.png"/>
+					<span>北京红叶拾楠咖啡店</span>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+					<div style="overflow: hidden; padding-left: 8px;padding-right: 15px;">
+						<span style="float: left; ">已达60%</span>
+						<span style="float: right;">￥1,500,000</span>
+					</div>
+					<button type="button" class="btn btn-primary">融资中</button>
+				</div>
+				<div class="spt_list_div">
+					<img src="img/list.png"/>
+					<span>北京红叶拾楠咖啡店</span>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+					<div style="overflow: hidden; padding-left: 8px;padding-right: 15px;">
+						<span style="float: left; ">已达60%</span>
+						<span style="float: right;">￥1,500,000</span>
+					</div>
+					<button type="button" class="btn btn-primary">融资中</button>
+				</div>
+				<div class="spt_list_div">
+					<img src="img/list.png"/>
+					<span>北京红叶拾楠咖啡店</span>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+					<div style="overflow: hidden; padding-left: 8px;padding-right: 15px;">
+						<span style="float: left; ">已达60%</span>
+						<span style="float: right;">￥1,500,000</span>
+					</div>
+					<button type="button" class="btn btn-primary">融资中</button>
+				</div>
+				<div class="spt_list_div spt_list_div_mar">
+					<img src="img/list.png"/>
+					<span>北京红叶拾楠咖啡店</span>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+					<div style="overflow: hidden; padding-left: 8px;padding-right: 15px;">
+						<span style="float: left; ">已达60%</span>
+						<span style="float: right;">￥1,500,000</span>
+					</div>
+					<button type="button" class="btn btn-primary">融资中</button>
+				</div>
+
+			</div>
+			<div class="scom_news">
+				<div class="sn_con">
+					<ul>
+						<li class = "sli_line_h"><a href="#"><span class="sn_con_left onNav sn_con_text">约谈</span><span class="sn_con_right sn_con_header">更多>></span></a></li>
+						<li class="sli_line_t"><a href="#"><span class="sn_con_left">筹天下12月12日项还款付息的公告</span><span class="sn_con_right">2014/12/12</span></a></li>
+						<li class="sli_line_t"><a href="#"><span class="sn_con_left">筹天下12月12日项还款付息的公告</span><span class="sn_con_right">2014/12/12</span></a></li>
+						<li class="sli_line_t"><a href="#"><span class="sn_con_left">筹天下12月12日项还款付息的公告</span><span class="sn_con_right">2014/12/12</span></a></li>
+						<li class="sli_line_t"><a href="#"><span class="sn_con_left">筹天下12月12日项还款付息的公告</span><span class="sn_con_right">2014/12/12</span></a></li>
+						<li class="sli_line_t"><a href="#"><span class="sn_con_left">筹天下12月12日项还款付息的公告</span><span class="sn_con_right">2014/12/12</span></a></li>
+					</ul>
+				</div>
+				<div class="sn_con">
+					<ul>
+						<li class="sli_line_h"><a href="#"><span class="sn_con_left onNav sn_con_text">攻略</span><span class="sn_con_right sn_con_header">更多>></span></a></li>
+						<li class="sli_line_t"><a href="#"><span class="sn_con_left">筹天下12月12日项还款付息的公告</span><span class="sn_con_right">2014/12/12</span></a></li>
+						<li class="sli_line_t"><a href="#"><span class="sn_con_left">筹天下12月12日项还款付息的公告</span><span class="sn_con_right">2014/12/12</span></a></li>
+						<li class="sli_line_t"><a href="#"><span class="sn_con_left">筹天下12月12日项还款付息的公告</span><span class="sn_con_right">2014/12/12</span></a></li>
+						<li class="sli_line_t"><a href="#"><span class="sn_con_left">筹天下12月12日项还款付息的公告</span><span class="sn_con_right">2014/12/12</span></a></li>
+						<li class="sli_line_t"><a href="#"><span class="sn_con_left">筹天下12月12日项还款付息的公告</span><span class="sn_con_right">2014/12/12</span></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<footer class="scom_footer">
+			<div class="sf_contact">
+				<div class="sn_con_left">
+					<a href="#"><span class="label">网站首页</span></a><span class="label">|</span>
+					<a href="#"><span class="label">关于我们</span></a><span class="label">|</span>
+					<a href="#"><span class="label">联系我们</span></a><span class="label">|</span>
+					<a href="#"><span class="label">帮助中心</span></a><span class="label">|</span>
+					<a href="#"><span class="label">新手指导</span></a><span class="label">|</span>
+					<a href="#"><span class="label">媒体报道</span></a><br>
+					<span class="label">衡惠金融信息服务（上海）有限公司北京分公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;京ICP备14035870号</span>
+				</div>
+				<div class="sn_con_right" style=" margin-right: 50px;">
+					<div style=" text-align: left;">
+						<span class="label">关注28众筹</span>
+					</div>
+					<div class="sindex_img_bg sina"></div>
+					<div class="sindex_img_bg qq"></div>
+					<div class="sindex_img_bg wechat"></div>
+					<div class="sindex_img_bg custom"></div>
+				</div>
+
+			</div>
+			<div class="sf_links">
+				<div class="sn_con_center">
+					<a href="#"><span class="label">友情链接：</span></a>
+					<a href="#"><span class="label">融途网</span></a><span>|</span>
+					<a href="#"><span class="label">云筹众筹网</span></a><span>|</span>
+					<a href="#"><span class="label">魔方众筹网</span></a><span>|</span>
+					<a href="#"><span class="label">圆桌汇众筹网</span></a><span>|</span>
+					<a href="#"><span class="label">合伙中国众筹网</span></a><span>|</span>
+					<a href="#"><span class="label">大家筹众筹网</span></a><span>|</span>
+					<a href="#"><span class="label">易筹众筹网</span></a><span>|</span>
+					<a href="#"><span class="label">金融超市众筹网</span></a><span>|</span>
+					<a href="#"><span class="label">创业易众筹网</span></a><span>|</span>
+					<a href="#"><span class="label">天使客众筹网</span></a>
+					<div class="btn-group">
+						<button type="button" class="btn btn1 dropdown-toggle btn-default-bg" data-toggle="dropdown">
+							更多<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu"></ul>
+					</div>
+
+				</div>
+
+
+			</div>
+			<div class="sn_con_center" style="text-align: center;">
+				<a href="#"><img src="img/norton.png" /></a>
+				<a href="#"><img src="img/norton.png" /></a>
+				<a href="#"><img src="img/norton.png" /></a>
+				<a href="#"><img src="img/norton.png" /></a>
+				<a href="#"><img src="img/norton.png" /></a>
+				<a href="#"><img src="img/norton.png" /></a>
+			</div>
+		</footer>
+	</div>
+	
+		
+	<script type="text/javascript">
+	
+		$(function(){
+		
+			/*$('#fullpage').fullpage({
+				navigation: true,
+				transforms: true,
+				scrollingSpeed: 700,
+			});*/
+			fixfirstpage();
+			$(window).resize(function(){
+				fixfirstpage();
+				// videoLayout();
+			});
+			
+			$(".topnavDiv a").click(function(){
+				if($(this).has(".onNav")){
+					$(".topnavDiv a").removeClass("onNav");
+					$(this).addClass("onNav");
+				}
+			}); 
+
+		});
+		function fixfirstpage(){
+			var windowW = $(window).width();
+			var windowH = $(window).height();
+			var fullimg = $('#responsive_img');//1920*1080
+	
+			var bl = parseFloat(1920/570); //图片大小比例
+	
+			fullimg.attr('style','');
+			//区分横屏 竖屏
+			if(windowH*bl > windowW)
+			{
+	
+				//alert(windowH);
+				//竖屏
+				fullimg.css({'height':windowH});
+			}
+			else
+			{
+				//alert(windowW);
+				fullimg.css({'width':windowW});
+			}
+			
+	
+			fullimg.parent().css({"width":windowW,"height":windowH});
+		}
+	</script>
+</body>
+</html>
