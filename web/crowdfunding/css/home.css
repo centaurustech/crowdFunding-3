@@ -37,7 +37,7 @@ body a{
 	position: absolute;
 	top: 0px;
 	display: block;
-	background: url(../img/nav_bg.png);
+	background: url(../image/nav_bg.png);
 	z-index: 2;
 }
 
@@ -120,10 +120,9 @@ body a{
     top: 10%;
     position: absolute;
     overflow: hidden;
-    border: 1px #fff solid;
 }
 .sindex_img_bg{
-	background:url(../img/logo.png) no-repeat;
+	background:url(../image/logo.png) no-repeat;
 }
 .sindex_project{
 	width: 600px;
@@ -145,7 +144,6 @@ body a{
 	margin: 0 auto;
 	text-align: center;
 	overflow: hidden;
-	border: 1px #fff solid;
 	margin-bottom: 0px;
 }
 .sitem{
