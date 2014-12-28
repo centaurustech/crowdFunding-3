@@ -6,12 +6,13 @@
 <title>首页</title>
 <link href="../css/home.css" rel="stylesheet" type="text/css">
 <link href="../../framework/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="../../framework/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
 <link href="../../framework/odometer/themes/odometer-theme-default.css" rel="stylesheet" type="text/css">
+
 
 <script type="text/javascript" src="../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../framework/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../../framework/odometer/js/odometer.js"></script>
+<script type="text/javascript" src="../js/animation.js"></script>
 
 </head>
 
@@ -310,8 +311,8 @@
 </div>
 		
 	<script type="text/javascript">
-	
-		$(function(){
+
+        $(function(){
 		
 			/*$('#fullpage').fullpage({
 				navigation: true,
@@ -350,13 +351,6 @@
 			
 			animate_show('.sindex_item ', 'bounceInDown');
 			
-			/*animate_delay('.sindex_item ', '.sitem_prnum', 'bounceInDown');
-			
-			animate_delay('.sindex_item ', '.sitem_mnum', 'bounceInDown');
-			
-			animate_delay('.sindex_item ', '.sitem_apnum_1', 'bounceInDown');
-			animate_delay('.sindex_item ', '.sitem_smonty', 'bounceInDown');*/
-			
 			animate_delay('.sindex_item ', '.sitem_prnum_1', 'bounce2');
 			animate_delay('.sindex_item ', '.sitem_prnum_2', 'bounce1');
 			
@@ -372,11 +366,10 @@
 			animate_delay('.sindex_item', '.sitem_smonty_text', 'fadeIn');
 			
 			animate_delay('.sitem_smonty_text', '.snum_pnum', '');
-
-            window.odometerOptions = {
-                format: '(ddd).dd'
-            };
-            l();
+            numberScroll('snum_pnum',95);
+            numberScroll('snum_mnum',108346);
+            numberScroll('snum_apnum',583138583.25);
+            numberScroll('snum_smonty',49839566.99);
         });
 		
 		function animate_show(element, animate) {
@@ -388,7 +381,6 @@
 			$(element1).one('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function() {
 				animate_show(element2, animate);
 				if (element1 == '.sitem_smonty_text') {
-//					l();
 					animate_show('.sindex_logo', 'fadeIn2');
 				}
 			});
@@ -420,39 +412,6 @@
 			fullimg.parent().css({"width":windowW,"height":windowH});
 		}
 		
-		function l() {
-//			var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
-//            $('.snum_pnum').animateNumber({
-//                number: 94,
-//                numberStep: comma_separator_number_step
-//            }, 1000);
-//
-//			$('.snum_mnum').animateNumber(
-//            {
-//                number: 108346,
-//                numberStep: comma_separator_number_step
-//            },1000);
-//
-//			$('.snum_apnum').animateNumber(
-//            {
-//                number: 583138583.25,
-//                numberStep: comma_separator_number_step
-//            },1000);
-//			$('.snum_smonty').animateNumber(
-//            {
-//                number: 49839566.99,
-//                numberStep: comma_separator_number_step
-//            },1000);
-            setTimeout(function() {
-                $('.snum_pnum').html(95);
-                $('.snum_mnum').html(108346);
-                $('.snum_apnum').html(583138583.25);
-                $('.snum_smonty').html(49839566.99);
-            },1000);
-
-
-		}
-
-	</script>
+		</script>
 </body>
 </html>
