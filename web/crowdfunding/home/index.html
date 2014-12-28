@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 <title>首页</title>
 <link href="../css/home.css" rel="stylesheet" type="text/css">
 <link href="../../framework/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../framework/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-<!--<link href="../../framework/bootstrap/css/animate.css" rel="stylesheet" type="text/css">
-<link href="fullpage/css/jquery.fullPage.css" rel="stylesheet" type="text/css">-->
+<link href="../../framework/odometer/themes/odometer-theme-default.css" rel="stylesheet" type="text/css">
+
 <script type="text/javascript" src="../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="../../framework/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="../../framework/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../framework/jquery/jquery.animateNumber.min.js"></script>
-<!--<script type="text/javascript" src="fullpage/js/jquery.fullPage.js"></script>-->
-<!--<script type="text/javascript" src="fullpage/js/jquery.fullPage.min.js"></script>-->
+<script type="text/javascript" src="../../framework/odometer/js/odometer.js"></script>
 
 </head>
 
@@ -55,7 +52,7 @@
                 <div class="sindex_project fadeIn animated">
                     <div class="sindex_img_bg sindex_logo"></div>
                 </div>
-                <div class="sindex_item">
+                <div class="sindex_item" style="padding-left: 11%">
 					<div class="sindex_num" style=" width: 230px;">
 						<div class="sitem sitem_prnum">
 							<div class="sindex_img_bg sitem_prnum_1"></div>
@@ -63,7 +60,7 @@
 							<div class="sindex_img_bg sitem_prnum_3" style="top: 36px; position: absolute;"></div>
 						</div>
 						<div class="sindex_img_bg sitem sitem1 sitem_pr_text"></div>
-						<div class="snum_pnum"></div>
+						<div class="snum_pnum odometer"></div>
 					</div>
                     
 					<div class="sindex_num" style=" width: 180px;">
@@ -73,7 +70,7 @@
 							<div class="sindex_img_bg sitem_mnum_3" style="margin-top: -50px;"></div>
 						</div>
 						<div class="sindex_img_bg sitem sitem1 sitem_mnum_text"></div>
-						<div class="snum_mnum"></div>
+						<div class="snum_mnum odometer"></div>
 					</div>
                    
 				   	<div class="sindex_num" style="width: 300px;">
@@ -82,13 +79,13 @@
 							<div class="sindex_img_bg sitem_apnum_2"></div>
 						</div>
 						<div class="sindex_img_bg sitem sitem1 sitem_apnum_text"></div>
-						<div class="snum_apnum"></div>
+						<div class="snum_apnum odometer"></div>
 				   	</div>
                    
 				   	<div class="sindex_num" style=" width: 320px;">
 						<div class="sindex_img_bg sitem sitem_smonty"></div>
 						<div class="sindex_img_bg sitem sitem1 sitem_smonty_text"></div>
-						<div class="snum_smonty"></div>
+						<div class="snum_smonty odometer"></div>
 					</div>
                 </div>
 				
@@ -375,12 +372,12 @@
 			animate_delay('.sindex_item', '.sitem_smonty_text', 'fadeIn');
 			
 			animate_delay('.sitem_smonty_text', '.snum_pnum', '');
-			
-			
-			scroll();
-						
 
-		});
+            window.odometerOptions = {
+                format: '(ddd).dd'
+            };
+            l();
+        });
 		
 		function animate_show(element, animate) {
 			$(element).show().addClass('animated ' + animate);
@@ -391,7 +388,7 @@
 			$(element1).one('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function() {
 				animate_show(element2, animate);
 				if (element1 == '.sitem_smonty_text') {
-					//l();
+//					l();
 					animate_show('.sindex_logo', 'fadeIn2');
 				}
 			});
@@ -402,85 +399,60 @@
 			var windowW = $(window).width();
 			var windowH = $(window).height();
 			var fullimg = $('#responsive_img');//1920*1080
+            var width = 1040;
+            var height = 309;
 	
 			var bl = parseFloat(1920/570); //图片大小比例
-	
+
 			fullimg.attr('style','');
 			//区分横屏 竖屏
 			if(windowH*bl > windowW)
 			{
-	
-				//alert(windowH);
 				//竖屏
 				fullimg.css({'height':windowH});
 			}
 			else
 			{
-				//alert(windowW);
-				fullimg.css({'width':windowW});
+                fullimg.css({'width':windowW});
+
 			}
-			
 	
 			fullimg.parent().css({"width":windowW,"height":windowH});
 		}
 		
 		function l() {
-			var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
-            $('.snum_pnum').animateNumber({
-                number: 94,
-                numberStep: comma_separator_number_step
-            }, 1000);
-			
-			$('.snum_mnum').animateNumber(
-            {
-                number: 108346,
-                numberStep: comma_separator_number_step
+//			var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
+//            $('.snum_pnum').animateNumber({
+//                number: 94,
+//                numberStep: comma_separator_number_step
+//            }, 1000);
+//
+//			$('.snum_mnum').animateNumber(
+//            {
+//                number: 108346,
+//                numberStep: comma_separator_number_step
+//            },1000);
+//
+//			$('.snum_apnum').animateNumber(
+//            {
+//                number: 583138583.25,
+//                numberStep: comma_separator_number_step
+//            },1000);
+//			$('.snum_smonty').animateNumber(
+//            {
+//                number: 49839566.99,
+//                numberStep: comma_separator_number_step
+//            },1000);
+            setTimeout(function() {
+                $('.snum_pnum').html(95);
+                $('.snum_mnum').html(108346);
+                $('.snum_apnum').html(583138583.25);
+                $('.snum_smonty').html(49839566.99);
             },1000);
-			
-			$('.snum_apnum').animateNumber(
-            {
-                number: 583138583.25,
-                numberStep: comma_separator_number_step
-            },1000);
-			$('.snum_smonty').animateNumber(
-            {
-                number: 49839566.99,
-                numberStep: comma_separator_number_step
-            },1000);
-		}
 
 
-		function scroll(){
-			setTimeout(function(){
-				$('.snum_pnum').html(95);
-				$('.snum_mnum').html(128664);
-				$('.snum_apnum').html(808378056.99);
-				$('.snum_smonty').html(82971419.00);
-				}, 1);
-				return 1
 		}
 
-		function show_num(n){
-		  var it = $(".t_num i");
-		  var len = String(n).length;
-		  for(var i=0;i<len;i++){
-			if(it.length<=i){
-			  $(".t_num").append("<i></i>");
-			}
-			var num=String(n).charAt(i);
-			var y = -parseInt(num)*30; //y轴位置
-			var obj = $(".t_num i").eq(i);
-			obj.animate({ //滚动动画
-			  backgroundPosition :'(0 '+String(y)+'px)' 
-			  }, 'slow','swing',function(){}
-			);
-		  }
-		}
-		
-		$(function(){
-  getdata();
-  setInterval('getdata()', 3000);//每隔3秒执行一次
-});
 	</script>
 </body>
 </html>

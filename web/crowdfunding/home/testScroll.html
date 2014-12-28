@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../../framework/odometer/themes/odometer-theme-default.css" />
+<style>
+    .odometer {
+        font-size: 40px;
+    }
+</style>
+<script>
+    window.odometerOptions = {
+        format: '(ddd).dd'
+    };
+</script>
+
+<script src="../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
+<script src="../../framework/odometer/js/odometer.js"></script>
+<div id="test1" class="odometer"></div>
+<div id="test2" class="odometer"></div>
+
+<script>
+    setTimeout(function(){
+        $('#test1').html(423234234);
+        $('#test2').html(1234);
+    }, 1000);
+</script>
