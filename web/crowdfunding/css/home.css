@@ -137,7 +137,7 @@ body a{
 	background-position: 0px 20px;
 }
 .sindex_item{
-	width: 100%;
+	width:1030px;
 	height: auto;
 	margin: 0 auto;
 	text-align: center;
@@ -463,7 +463,7 @@ body a{
 	background: #363636;
 }
 .sf_contact{
-	width: 58%;
+	width: 68%;
 	height: auto;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -488,7 +488,7 @@ body a{
 	border-bottom: 1px #ababab solid;
 }
 .sn_con_center{
-	width: 58%;
+	width: 68%;
 	margin: 0 auto;
 	overflow: hidden;
 }
