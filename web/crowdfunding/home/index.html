@@ -38,9 +38,6 @@
         </div>
     </div>
 </nav>
-<div id="header">
-
-</div>
 <div id="fullpage">
 <!-- 首屏 -->
 <div class="section section_index">
@@ -98,7 +95,7 @@
 <div class="section section_com">
 <div class="scom_product">
     <div class="spt_classify">
-        <div class="productDiv" style=" border-bottom: 1px #f4f4f5 solid;">
+        <div class="productDiv" style=" border-bottom: 1px #f4f4f5 solid; margin-bottom: 2px;">
             <span class="col-lg-2">所有：</span>
             <ul class="nav nav-pills" role="tablist">
                 <li role="presentation"><a href="#">预热中</a></li>
@@ -336,22 +333,26 @@
     </div>
     <div style="height: 30px;"></div>
 </footer>
+<div id="slayer">
+	<div class="online">
+		<a href="#"><img src="../image/kefu.png" /></a>
+	</div>
+	<div class="online">
+		<a href="#"><img src="../image/liuyan.png" /></a>
+	</div>
+	<div class="online">
+		<a href="#"><img src="../image/fanhui.png" /></a>
+	</div>
+</div>
 </div>
 </div>
 
 <script type="text/javascript">
 
     $(function () {
-
-        /*$('#fullpage').fullpage({
-         navigation: true,
-         transforms: true,
-         scrollingSpeed: 700,
-         });*/
         fixfirstpage();
         $(window).resize(function () {
             fixfirstpage();
-            // videoLayout();
         });
 
         $(".topnavDiv a").click(function () {
@@ -361,12 +362,24 @@
             }
         });
 
+		var X = $('.scom_news').offset().top; 
+		$('#slayer').css({'top':X + 200})
+		
         $('.sindex_item').hide();
-        /*$('.sitem_prnum').hide();
-         $('.sitem_mnum').hide();
-         $('.sitem_apnum_1').hide();
-         $('.sitem_apnum_2').hide();
-         $('.sitem_smonty').hide();*/
+        
+		$('.snum_pnum').css("color","#695529");
+		$('.snum_pnum').css("font-size","9px");
+        $('.snum_mnum').css("color","#695529");
+		$('.snum_mnum').css("font-size","9px");
+        $('.snum_apnum').css("color","#695529");
+		$('.snum_apnum').css("font-size","9px");
+        $('.snum_smonty').css("color","#695529");
+		$('.snum_smonty').css("font-size","9px");
+		/*$('.snum_pnum').hide();
+        $('.snum_mnum').hide();
+        $('.snum_apnum').hide();
+        $('.snum_smonty').hide();*/
+		
 
         $('.sitem_pr_text').hide();
 
@@ -395,10 +408,9 @@
         animate_delay('.sindex_item', '.sitem_smonty_text', 'fadeIn');
 
         animate_delay('.sitem_smonty_text', '.snum_pnum', '');
-        numberScroll('snum_pnum', 95);
-        numberScroll('snum_mnum', 108346);
-        numberScroll('snum_apnum', 583138583.25);
-        numberScroll('snum_smonty', 49839566.99);
+		
+		
+        
     });
 
     function animate_show(element, animate) {
@@ -410,6 +422,23 @@
         $(element1).one('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function () {
             animate_show(element2, animate);
             if (element1 == '.sitem_smonty_text') {
+
+				
+				numberScroll('snum_pnum', 95);
+				numberScroll('snum_mnum', 108346);
+				numberScroll('snum_apnum', 583138583.25);
+				numberScroll('snum_smonty', 49839566.99);
+				
+				$('.snum_pnum').css("color","#038cf6");
+				$('.snum_pnum').css("font-size","57px");
+				$('.snum_mnum').css("color","#038cf6");
+				$('.snum_mnum').css("font-size","42px");
+				$('.snum_apnum').css("color","#038cf6");
+				$('.snum_apnum').css("font-size","36px");
+				$('.snum_smonty').css("color","#038cf6");
+				$('.snum_smonty').css("font-size","36px");
+		
+		
                 animate_show('.sindex_logo', 'fadeIn2');
             }
         });
