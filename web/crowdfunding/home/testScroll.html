@@ -9,7 +9,7 @@
         }
 
         ul, li {
-            padding: 0;
+            padding: 10px;
             margin: 0;
         }
 
@@ -62,7 +62,7 @@
                     iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
                     oBox.offsetTop == iTop ? clearInterval(oBox.timer) : (oBox.style.top = oBox.offsetTop + iSpeed + "px");
                 }, 30)
-            }, 100)
+            }, 100);
 
             oBox.onmouseover = function () {
                 this.style.width = 131 + "px";
