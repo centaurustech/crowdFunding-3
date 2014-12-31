@@ -7,12 +7,16 @@
     <link href="../../css/home.css" rel="stylesheet" type="text/css">
     <link href="../../css/projects.css" rel="stylesheet" type="text/css">
     <link href="../../../framework/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../../../framework/carousel/style/style-demo.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="../../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="../../../framework/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/tab.js"></script>
+    <script type="text/javascript" src="../../../framework/carousel/js/jquery.mousewheel-3.1.12.js"></script>
+    <script type="text/javascript" src="../../../framework/carousel/js/jquery.jcarousellite.js"></script>
 </head>
 
-<body>
+<body class="body_bg">
 <!-- 导航 -->
 <div class="container">
     <nav class="navbar navbar-fixed-top" role="navigation">
@@ -35,8 +39,7 @@
             </div>
         </div>
     </nav>
-
-    <div class="pro_con" style="width: 1075px;">
+    <div class="pro_1">
         <div class="pro_nav">
             <div class="eidtitem pro_nav_bg pro_nav_postion">1.基本信息</div>
             <div class="basic pro_nav_bg pro_nav_postion" style="margin-left: -5px;">2.编辑信息</div>
@@ -51,47 +54,105 @@
                 <button type="submit" class="btn btn-custom btn-width-2">提交审核</button>
             </div>
         </div>
+        <div id="tab2">
+            <ul class="tab_menu">
+                <li class="selected_2"><a class="a_decoration" href="#"><span class="label_6">项目介绍</span></a></li>
+                <li><a class="a_decoration" href="#"><span class="label_6">路演展示</span></a></li>
+                <li><a class="a_decoration" href="#"><span class="label_6">话题讨论</span></a></li>
+                <li><a class="a_decoration" href="#"><span class="label_6">参与成员</span></a></li>
+                <div></div>
+            </ul>
 
-        <div class="pro_form pro_fillet" style="height: 250px;">
-            <div class="pro_edit_bg">
-                <a href="#">
-                    <img src="../../image/edit.png"/>
-                </a>
-                <span class="label-blue">修改背景图</span>
-            </div>
-            <div class="pro_add_bg">
-                <div class="pro_add_1">
-                    <a class="a_decoration" href="#">
-                        <span class="label_2">添加背景图&nbsp;<img src="../../image/add.png"/></span>
-                    </a>
-                </div>
-                <span class="pro_form_color"> 尺寸1900*500最佳，JPG模式，300KB以内。</span>
-            </div>
         </div>
-        <div class="l"></div>
-        <div class="pro_form">
-            <div class="pro_context">
-                <div class="pro_product">
-                    <div class="pro_edit_bg">
-                        <a href="#">
-                            <img src="../../image/edit.png"/>
-                        </a>
-                        <span class="label-blue">修改服务提供商</span>
+    </div>
+    <div class="pro_2">
+        <div class="pro_con" style="width: 1112px; margin-top: 32px;">
+             <!--<div class="pro_form pro_fillet" style="height: 250px;">
+                 <div class="pro_edit_bg">
+                     <a href="#">
+                         <img src="../../image/edit.png"/>
+                     </a>
+                     <span class="label-blue">修改背景图</span>
+                 </div>
+                 <div class="pro_add_bg">
+                     <div class="pro_add_1">
+                         <a class="a_decoration" href="#">
+                             <span class="label_2">添加背景图&nbsp;<img src="../../image/add.png"/></span>
+                         </a>
+                     </div>
+                     <span class="pro_form_color"> 尺寸1900*500最佳，JPG模式，300KB以内。</span>
+                 </div>
+             </div>
+            <div class="l"></div>-->
+            <div class="pro_form">
+                <div class="pro_context">
+                    <div class="pro_product">
+
+                        <div id="jcl-demo">
+                            <div class="pro_edit_bg">
+                                <a href="#">
+                                    <img src="../../image/edit.png"/>
+                                </a>
+                                <span class="label-blue">修改服务提供商</span>
+                            </div>
+                            <div class="custom-container mixedContent">
+                                <a href="#" class="prev">&lsaquo;</a>
+                                <div class="carousel">
+                                    <ul>
+                                        <li>
+                                            <div class="carousel_bg carousel_div carousel_field">
+                                                <span class="label_7">天津优选品牌策划</span>
+                                            </div>
+                                            <div style="text-align: center"><span class="label_8">提供实地查考服务</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="carousel_bg carousel_div carousel_money">
+                                                <span class="label_7">天津优选品牌策划</span>
+                                            </div>
+                                            <div style="text-align: center"><span class="label_8">提供财务管理服务</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="carousel_bg carousel_div carousel_plan">
+                                                <span class="label_7">天津优选品牌策划</span>
+                                            </div>
+                                            <div style="text-align: center"><span class="label_8">提供品牌策划服务</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="carousel_bg carousel_div carousel_consult">
+                                                <span class="label_7">天津优选品牌策划</span>
+                                            </div>
+                                            <div style="text-align: center"><span class="label_8">提供法律咨询服务</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="carousel_bg carousel_div carousel_service">
+                                                <span class="label_7">天津优选品牌策划</span>
+                                            </div>
+                                            <div style="text-align: center"><span class="label_8">提供资本运作服务</span></div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <a href="#" class="next">&rsaquo;</a>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="btn-group">...</div>
+                    <div class="pro_tab"></div>
                 </div>
-                <div class="pro_tab"></div>
-            </div>
-            <div class="pro_context" style="float: right">
-                <div class="pro_mes"></div>
-                <div class="pro_mes"></div>
-                <div class="pro_mes"></div>
+                <div class="pro_context" style="float: right">
+                    <div class="pro_mes"></div>
+                    <div class="pro_mes"></div>
+                    <div class="pro_mes"></div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
 <div style="height: 30px;"></div>
-<footer class="scom_footer">
+<!--<footer class="scom_footer">
     <div class="sf_contact">
         <div class="sn_con_left" style="">
             <a href="#"><span class="label label_1">网站首页</span></a><span class="label_1">|</span>
@@ -148,7 +209,15 @@
         </div>
     </div>
     <div style="height: 30px;"></div>
-</footer>
-
+</footer>-->
+<script type="text/javascript">
+    $(function() {
+        $(".mixedContent .carousel").jCarouselLite({
+            btnNext: ".mixedContent .next",
+            btnPrev: ".mixedContent .prev",
+            visible: 5
+        });
+    });
+</script>
 </body>
 </html>

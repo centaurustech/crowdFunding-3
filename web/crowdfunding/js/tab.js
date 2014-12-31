@@ -5,4 +5,10 @@ $(document).ready(function(){
         var index = $tab_li.index(this);
         $('div.tab_box1 > div').eq(index).show().siblings().hide();
     });
+    var $tab_li = $('#tab2').find('ul li');
+    $tab_li.click(function(){
+        $(this).addClass("selected_2").siblings().removeClass("selected_2");
+        var index = $tab_li.index(this);
+        $('div.tab_box2 > div').eq(index).show().siblings().hide();
+    });
 });
