@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>编辑项目</title>
-    <link href="../css/home.css" rel="stylesheet" type="text/css">
-    <link href="../css/projects.css" rel="stylesheet" type="text/css">
-    <link href="../../framework/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../../css/home.css" rel="stylesheet" type="text/css">
+    <link href="../../css/projects.css" rel="stylesheet" type="text/css">
+    <link href="../../../framework/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-    <script type="text/javascript" src="../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="../../framework/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/tab.js"></script>
+    <script type="text/javascript" src="../../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../../framework/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -25,6 +24,9 @@
                 <a class="col-lg-2 col-sm-2 col-md-2 col" href="#">发起项目</a>
                 <a class="col_text">北京</a>
                 <a class="col_text">[城市切换]</a>
+
+            </div>
+            <div>
             </div>
             <div id="login" class="col-lg-3 col-sm-12 col-md-12 col-xs-12">
                 <a href="#" style="padding-right:10px;">登录</a>
@@ -34,53 +36,58 @@
         </div>
     </nav>
 
-    <div class="pro_con pro_con_border pro_fillet" style="width: 808px; height: 768px; margin-top: 12%">
-        <div class="pro_tab_1">
-            <div class="pro_label"><span class="label_3">个人中心</span></div>
-            <div id="tab1">
-                <ul class="tab_menu">
-                    <li class="selected_1"><a class="a_decoration" href="#"><span class="label_3">我的投资</span></a></li>
-                    <li><a class="a_decoration" href="#"><span class="label_4">我的项目</span></a></li>
-                    <li><a class="a_decoration" href="#"><span class="label_4">资金管理</span></a></li>
-                    <li><a class="a_decoration" href="#"><span class="label_4">我的消息</span></a></li>
-                    <li><a class="a_decoration" href="#"><span class="label_4">个人资料</span></a></li>
-                </ul>
-
-            </div>
+    <div class="pro_con" style="width: 1075px;">
+        <div class="pro_nav">
+            <div class="eidtitem pro_nav_bg pro_nav_postion">1.基本信息</div>
+            <div class="basic pro_nav_bg pro_nav_postion" style="margin-left: -5px;">2.编辑信息</div>
+            <div class="eidtitem pro_nav_bg pro_nav_postion" style="margin-left: -5px;">3.提交审核</div>
         </div>
-        <div>
-            <div class="userInfo">
-                <div class="userImg pro_fillet"></div>
-                <div class="userComplete">
-                    <br>
-                    <div style="width: auto; float: left;"><span class="label_5">信息完成度:&nbsp;</span></div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                             style="width: 60%;"></div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-11" style="text-align: right; padding-right: 25px;">
-                            <button type="submit" class="btn btn-custom btn-width-3">个人认证</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="userSpan">
-                    <span class="label_5">用户名</span><br><br><br>
-                    <span class="label_5">关注0</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class="label_5">投资0</span>
 
-                </div>
-
-            </div>
-            <div class="tab_box1">
-                <div>我的投资</div>
-                <div class="tab_hide">我的项目</div>
-                <div class="tab_hide">资金管理</div>
-                <div class="tab_hide">我的消息</div>
-                <div class="tab_hide">个人资料</div>
+        <div class="pro_preview">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-preview btn-width-2">
+                    <span class="glyphicon glyphicon-eye-open"></span>&nbsp;效果预览
+                </button>
+                <button type="submit" class="btn btn-custom btn-width-2">提交审核</button>
             </div>
         </div>
 
+        <div class="pro_form pro_fillet" style="height: 250px;">
+            <div class="pro_edit_bg">
+                <a href="#">
+                    <img src="../../image/edit.png"/>
+                </a>
+                <span class="label-blue">修改背景图</span>
+            </div>
+            <div class="pro_add_bg">
+                <div class="pro_add_1">
+                    <a class="a_decoration" href="#">
+                        <span class="label_2">添加背景图&nbsp;<img src="../../image/add.png"/></span>
+                    </a>
+                </div>
+                <span class="pro_form_color"> 尺寸1900*500最佳，JPG模式，300KB以内。</span>
+            </div>
+        </div>
+        <div class="l"></div>
+        <div class="pro_form">
+            <div class="pro_context">
+                <div class="pro_product">
+                    <div class="pro_edit_bg">
+                        <a href="#">
+                            <img src="../../image/edit.png"/>
+                        </a>
+                        <span class="label-blue">修改服务提供商</span>
+                    </div>
+                    <div class="btn-group">...</div>
+                </div>
+                <div class="pro_tab"></div>
+            </div>
+            <div class="pro_context" style="float: right">
+                <div class="pro_mes"></div>
+                <div class="pro_mes"></div>
+                <div class="pro_mes"></div>
+            </div>
+        </div>
     </div>
 </div>
 <div style="height: 30px;"></div>
@@ -132,12 +139,12 @@
     </div>
     <div class="sn_con_center">
         <div style="margin: 0 auto; width: 60%; height: auto; overflow: hidden;">
-            <a href="#"><img src="../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
-            <a href="#"><img src="../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
-            <a href="#"><img src="../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
-            <a href="#"><img src="../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
-            <a href="#"><img src="../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
-            <a href="#"><img src="../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
+            <a href="#"><img src="../../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
+            <a href="#"><img src="../../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
+            <a href="#"><img src="../../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
+            <a href="#"><img src="../../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
+            <a href="#"><img src="../../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
+            <a href="#"><img src="../../image/norton.png" class="img-responsive sn_con_left" style=" margin-right:15px;"/></a>
         </div>
     </div>
     <div style="height: 30px;"></div>
