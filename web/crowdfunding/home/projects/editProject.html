@@ -8,12 +8,17 @@
     <link href="../../css/projects.css" rel="stylesheet" type="text/css">
     <link href="../../../framework/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../../../framework/carousel/style/style-demo.css" rel="stylesheet" type="text/css">
+    <link href="../../../framework/kindeditor/default/default.css" rel="stylesheet" type="text/css"/>
 
     <script type="text/javascript" src="../../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="../../../framework/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../js/tab.js"></script>
     <script type="text/javascript" src="../../../framework/carousel/js/jquery.mousewheel-3.1.12.js"></script>
     <script type="text/javascript" src="../../../framework/carousel/js/jquery.jcarousellite.js"></script>
+
+
+    <script type="text/javascript" charset="utf-8" src="../../../framework/kindeditor/js/kindeditor-min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../../framework/kindeditor/js/zh_CN.js"></script>
 </head>
 
 <body class="body_bg">
@@ -67,23 +72,6 @@
     </div>
     <div class="pro_2">
         <div class="pro_con" style="width: 1112px; margin-top: 32px;">
-             <!--<div class="pro_form pro_fillet" style="height: 250px;">
-                 <div class="pro_edit_bg">
-                     <a href="#">
-                         <img src="../../image/edit.png"/>
-                     </a>
-                     <span class="label-blue">修改背景图</span>
-                 </div>
-                 <div class="pro_add_bg">
-                     <div class="pro_add_1">
-                         <a class="a_decoration" href="#">
-                             <span class="label_2">添加背景图&nbsp;<img src="../../image/add.png"/></span>
-                         </a>
-                     </div>
-                     <span class="pro_form_color"> 尺寸1900*500最佳，JPG模式，300KB以内。</span>
-                 </div>
-             </div>
-            <div class="l"></div>-->
             <div class="pro_form">
                 <div class="pro_context">
                     <div class="pro_product">
@@ -137,10 +125,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pro_tab"></div>
+                    <div class="pro_tab">
+                        <div id="tab3">
+                            <ul class="tab_menu">
+                                <li class="selected_3"><a class="a_decoration" href="#"><span class="label_9">插入视频</span></a></li>
+                                <li><a class="a_decoration" href="#"><span class="label_9">上传视频</span></a></li>
+                                <div class="pro_edit_bg">
+                                    <a href="#">
+                                        <img src="../../image/edit.png"/>
+                                    </a>
+                                    <span class="label-blue">修改视频</span>
+                                </div>
+                            </ul>
+
+                        </div>
+                        <div id="tab_box3">
+                            <div>
+                                <textarea name="content" style="width:670px;height:400px;visibility:hidden;"></textarea>
+                            </div>
+                            <div class="tab_hide">我的项目</div>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="pro_context" style="float: right">
-                    <div class="pro_mes"></div>
+                    <div class="pro_mes" style="width: 348px; height: 294px;">
+                        <div class="pro_edit_bg">
+                            <a href="#">
+                                <img src="../../image/edit.png"/>
+                            </a>
+                            <span class="label-blue">修改基本信息</span>
+                        </div>
+                        <div class="pro_context_title"><span class="label_10">创始人</span></div>
+                        <div class="pro_context_body">
+                            <img src="../../image/founder.png">
+                            <span>刘新同</span>
+                            <button>约谈</button>
+                            <button>+关注</button>
+                        </div>
+                    </div>
                     <div class="pro_mes"></div>
                     <div class="pro_mes"></div>
                 </div>
@@ -216,6 +239,12 @@
             btnNext: ".mixedContent .next",
             btnPrev: ".mixedContent .prev",
             visible: 5
+        });
+        var editor;
+        KindEditor.ready(function(K) {
+            editor = K.create('textarea[name="content"]', {
+                allowFileManager: true
+            });
         });
     });
 </script>

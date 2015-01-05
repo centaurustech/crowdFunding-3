@@ -1,14 +1,21 @@
 $(document).ready(function(){
-    var $tab_li = $('#tab1').find('ul li');
-    $tab_li.click(function(){
+    var $tab_li1 = $('#tab1').find('ul li');
+    $tab_li1.click(function(){
         $(this).addClass("selected_1").siblings().removeClass("selected_1");
-        var index = $tab_li.index(this);
+        var index = $tab_li1.index(this);
         $('div.tab_box1 > div').eq(index).show().siblings().hide();
     });
-    var $tab_li = $('#tab2').find('ul li');
-    $tab_li.click(function(){
+    var $tab_li2 = $('#tab2').find('ul li');
+    $tab_li2.click(function(){
         $(this).addClass("selected_2").siblings().removeClass("selected_2");
-        var index = $tab_li.index(this);
+        var index = $tab_li2.index(this);
         $('div.tab_box2 > div').eq(index).show().siblings().hide();
+    });
+
+    var $tab_li3 = $('#tab3').find('ul li');
+    $tab_li3.click(function(){
+        $(this).addClass("selected_3").siblings().removeClass("selected_3");
+        var index = $tab_li3.index(this);
+        $('div.tab_box3 > div').eq(index).show().siblings().hide();
     });
 });
