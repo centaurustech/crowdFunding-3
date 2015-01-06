@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<html lang="zh-CN">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编辑信息</title>
     <link href="../css/home.css" rel="stylesheet" type="text/css">
-    <link href="../../framework/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../../framework/odometer/themes/odometer-theme-default.css" rel="stylesheet" type="text/css">
-
-
+    <link href="http://g.tbcdn.cn/sj/wqui/1.0.0/css/sui.min.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="../../framework/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../framework/odometer/js/odometer.js"></script>
-    <script type="text/javascript" src="../js/animation.js"></script>
 </head>
 <body>
 <!-- 导航 -->
-<nav class="navbar navbar-fixed-top" role="navigation">
-    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12" id="topnav">
-        <div class="col-lg-6 col-sm-6 col-md-6 col-lg-offset-3 col-sm-offset-1 col-md-offset-1 hidden-md hidden-sm hidden-xs topnavDiv">
-            <span class="col-lg-2 col-sm-2 col-md-2"></span>
-            <a class="col-lg-2 col-sm-2 col-md-2 col onNav" href="#">首页</a>
-            <a class="col-lg-2 col-sm-2 col-md-2 col" href="#">浏览项目</a>
-            <a class="col-lg-2 col-sm-2 col-md-2 col" href="#">发起项目</a>
-            <a class="col_text">北京</a>
+<div id="topnav" class="navbar-fixed-top">
+    <div class="nav">
+        <a href="#" class="logo">
+            <img src="../image/logo.png">
+        </a>
+        <ul class="nav-ul">
+            <li class="onNav"><a href="#">首页</a></li>
+            <li><a href="#">浏览项目</a></li>
+            <li><a href="#">发起项目</a></li>
+            <a class="col_text">全国</a>
             <a class="col_text">[城市切换]</a>
-
-        </div>
-        <div>
-        </div>
-        <div id="login" class="col-lg-3 col-sm-12 col-md-12 col-xs-12">
-            <a href="#" style="padding-right:10px;">登录</a>
+        </ul>
+        <div id="login">
+            <a href="#">登录</a>
             <span>|</span>
-            <a href="#" style="padding-left:10px;">注册</a>
+            <a href="#">注册</a>
         </div>
     </div>
-</nav>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $(".nav-ul li").click(function () {
+            if ($(this).has(".onNav")) {
+                $(".nav-ul li").removeClass("onNav");
+                $(this).addClass("onNav");
+            }
+        });
+    });
+</script>
 </body>
 </html>

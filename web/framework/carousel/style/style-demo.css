@@ -4,7 +4,7 @@
     background-color: ghostwhite;
     float: left;
     border: none !important;
-
+    width: 628px !important;
     /* Needed for rendering without flicker */
     position: relative;
     visibility: hidden;
@@ -72,9 +72,9 @@
         padding-top: 2px;
         text-indent: 13px;
     }
-        #jcl-demo a.prev:hover, #jcl-demo a.next:hover, #jcl-demo a.go:hover {
-            background-color: #e4f5ff;
-        }
+    #jcl-demo a.prev:hover, #jcl-demo a.next:hover, #jcl-demo a.go:hover {
+        background-color: #e4f5ff;
+    }
 
 /* Additional carousel styles for external controls, slider, widget, mid etc. */
 
@@ -125,9 +125,7 @@
 }
 .carousel_div{
     width: 126px;
-    height: 75px;
     padding-top: 50px;
-    padding-bottom: 20px;
     text-align: center;
     border-right: 1px #cfcfcf solid;
 }

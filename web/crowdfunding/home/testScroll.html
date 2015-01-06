@@ -1,12 +1,69 @@
-<!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_icons_1"></a>
-    <a class="jiathis_button_icons_2"></a>
-    <a class="jiathis_button_icons_3"></a>
-    <a class="jiathis_button_icons_4"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-    <a class="jiathis_counter_style"></a>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>导航栏</title>
+<link href="../css/home.css" rel="stylesheet" type="text/css">
+<link href="http://g.tbcdn.cn/sj/wqui/1.0.0/css/sui.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://g.tbcdn.cn/sj/wqui/1.0.0/js/sui.min.js"></script>
+<style type="text/css">
+    .nav{
+        width: 1112px !important;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin: 0 auto;
+    }
+    .nav-ul{
+        width: 60%;
+        float: left;
+    }
+    .nav .sui-brand{
+        margin-right: 10px;
+    }
+    .nav-ul li{
+        width: 130px;
+        float: left;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 35px;
+    }
+    #topnav .nav-ul li a{
+        font-size: 16px;
+        font-weight: 300;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #fff;
+    }
+    .logo{
+        float: left;
+        margin: 15px;
+    }
+</style>
+<div id="topnav">
+        <div class="nav">
+            <a href="#" class="logo">
+                <img src="../image/logo.png">
+            </a>
+            <ul class="nav-ul">
+                <li class="onNav"><a href="#">首页</a></li>
+                <li><a href="#">浏览项目</a></li>
+                <li><a href="#">发起项目</a></li>
+                <a class="col_text">全国</a>
+                <a class="col_text">[城市切换]</a>
+            </ul>
+            <div id="login">
+                <a href="#">登录</a>
+                <span>|</span>
+                <a href="#">注册</a>
+            </div>
+        </div>
 </div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
+<script type="text/javascript">
+    $(function(){
+        $(".nav-ul a").click(function () {
+            if ($(this).has(".onNav")) {
+                $(".nav-ul a").removeClass("onNav");
+                $(this).addClass("onNav");
+            }
+        });
+    });
+</script>

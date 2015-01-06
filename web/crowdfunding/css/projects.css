@@ -2,7 +2,7 @@
 
 body{
 	width: 100%;
-	background: #efefef !important;
+	background: #f8f8f8 !important;
 	height: auto;
 	margin: 0 auto;
 	padding: 0px;
@@ -13,8 +13,7 @@ body{
 }
 .pro_con{
 	margin:  0 auto;
-	margin-top: 15%;
-	overflow:  hidden;
+	padding-top: 100px;
 }
 .pro_nav{
 	width: 510px;
@@ -23,7 +22,7 @@ body{
 	font-size: 18px;
 	overflow:  hidden;
 	color: #fff;
-	margin-bottom:30px;
+	padding-bottom:30px;
 	text-align:  center;
 }
 .pro_nav_bg{
@@ -31,9 +30,9 @@ body{
 }
 .pro_nav_postion{
 	width: 173px;
-	height: 36px;
+	height: 25px;
 	overflow: hidden;
-	padding-top: 5px;
+	padding-top: 8px;
 	float: left;
 }
 /** 项目详情 start**/
@@ -54,8 +53,10 @@ body{
 	float: left;
 	text-align: left;
 }
+
 .pro_img img{
 	float: left;
+	margin-top: -5px;
 	margin-right: 10px;
 }
 .pro_qr_code{
@@ -68,14 +69,26 @@ body{
 
 .share{
 	width: 220px;
-	height: 90%;
+	height: 80%;
 	float: right;
 	text-align: left;
-	padding: 12px;
+	padding: 15px;
 }
 
 .share img{
 	margin-top: -5px;
+}
+
+#head_detail{
+	width: 284px;
+	height: 167px;
+	padding: 15px;
+	background: #fff;
+	border: 15px #000 solid;
+}
+
+#head_detail p{
+	line-height: 28px;
 }
 /** 项目详情end**/
 .basic{
@@ -97,10 +110,7 @@ body{
 	background: #fff;
 	margin:  0 auto;
 }
-.pro_form_distance1{
-	padding-top: 30px;
-	padding-left: 15%;
-}
+
 .pro_fillet{
 	border-radius:5px;
 	-moz-radius:5px;
@@ -176,7 +186,7 @@ body{
 	color: #fff !important;
 }
 .pro_edit_bg{
-	width: 100%;
+	width: 98%;
 	height: 25px;
 	padding-top: 5px;
 	padding-right: 20px;
@@ -271,7 +281,8 @@ body{
 	width: auto;
 	float: left;
 	background: #fff;
-	overflow: hidden;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
 }
 .pro_product{
 	width: 735px;
@@ -280,12 +291,11 @@ body{
 	border-bottom: 1px #cfcfcf dashed;
 }
 .pro_tab{
-	width: 735px;
-	height: 927px;
+	width: 705px;
+	height: auto;
+	padding: 15px;
+	overflow: hidden;
 	margin-top: 10px;
-	padding: 10px;
-	padding-left: 15px;
-	padding-right: 15px;
 	text-align: center;
 }
 .pro_tab p{
@@ -298,7 +308,8 @@ body{
 	height: 100px;
 	background: #fff;
 	margin-bottom: 10px;
-	box-shadow:0px 0px 5px #e9e9e9;
+	box-shadow:0px 0px 5px #f2f2f2;
+	-webkit-box-shadow: 0px 0px 5px #f2f2f2;
 }
 .l{
 	height: 10px;
@@ -365,6 +376,8 @@ body{
 #tab2{
 	width: 100%;
 	height: 52px;
+	margin-top: -55px;
+	background: #eeeeee;
 	border-top: 1px #e0e0e0 solid;
 	border-bottom: 1px #e0e0e0 solid;
 }
@@ -375,18 +388,14 @@ body{
 }
 .pro_1{
 	width: 100%;
-	height: 186px;
-	left: 0px;
-	margin-top: 140px;
-	position: absolute;
+	margin-top: 100px;
+	background: #f8f8f8;
 }
 .pro_2{
 	width: 100%;
 	height: auto;
-	left: 0px;
-	top: 270px;
-	background: #f5f5f5;
-	position: absolute;
+	margin-top: 30px;
+	background: #f8f8f8;
 }
 #tab2 .tab_menu{
 	width: 1112px;
@@ -396,10 +405,10 @@ body{
 	text-align: center;
 }
 #tab2 .tab_menu li{
-	height: 42px;
+	height: 32px;
 	width: 180px;
 	margin-top: 10px;
-	padding-top: 8px;
+	padding-top: 10px;
 	float: left;
 	list-style: none;
 	margin-left: 0px;
@@ -441,7 +450,7 @@ body{
 .selected_3{
 	background: #fff !important;
 }
-#tab_box3{
+.tab_box3{
 	margin-left: 32px;
 }
 .progress_1 {
@@ -464,7 +473,7 @@ body{
 	box-shadow:0px -2px 10px #524e4e inset;
 }
 .pro_context_title{
-	width: 100%;
+	width: auto;
 	padding: 18px;
 	overflow: hidden;
 }
@@ -475,7 +484,7 @@ body{
 	margin: 10px;
 }
 .pro_context_text{
-	width: 94%;
+	width: 310px;
 	margin-left: 10px;
 	padding: 10px;
 	overflow: hidden;
@@ -503,6 +512,16 @@ body{
 	overflow: hidden;
 	border-top:  1px #cccccc solid;
 }
+.imgDiv{
+	width: 106px;
+	float: left;
+}
+.text_position_c{
+	text-align: center;
+}
+.border_line{
+	border-right: 1px #CCCCCC solid;
+}
 .pro_imgList img{
 	margin-right: 0px;
 }
@@ -513,4 +532,33 @@ body{
 }
 .sui-progress .bar-custom{
 	background: #038cfd !important;
+}
+.sui-btn-1{
+	display: inline-block;
+	padding: 5px 8px;
+	box-sizing: border-box;
+	margin-bottom: 0;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #333;
+	background-color: #eee;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid #eee;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.sui-btn-radius {
+
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
