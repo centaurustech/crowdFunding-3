@@ -13,7 +13,6 @@ body{
 }
 .pro_con{
 	margin:  0 auto;
-	padding-top: 100px;
 }
 .pro_nav{
 	width: 510px;
@@ -111,6 +110,10 @@ body{
 	margin:  0 auto;
 }
 
+.pro_form header{
+	width: 64%;
+	text-align: right;
+}
 .pro_fillet{
 	border-radius:5px;
 	-moz-radius:5px;
@@ -171,6 +174,15 @@ body{
 	width: 236px;
 	height: 38px;
 }
+.btn-width-6{
+	width: 90px;
+	height: 30px;
+}
+.btn-width-7{
+	width: 70px;
+	height: 26px;
+	padding-top: 2px !important;
+}
 .btn-custom {
 	color: #fff !important;
 	background-color: #038cfd !important;
@@ -181,7 +193,6 @@ body{
 	background-color: #cccccc;
 	border-color: #cccccc;
 }
-
 .btn-custom:hover, .btn-custom:focus {
 	color: #fff !important;
 }
@@ -240,6 +251,7 @@ body{
 .label_14{
 	font-size: 25px;
 }
+
 .label_color_1{
 	color: #343434;
 }
@@ -249,8 +261,24 @@ body{
 .label_color_3{
 	color: #ff6600;
 }
+.label_color_4{
+	color: #0099ff;
+}
+
 .label_size_1{
 	font-size: 14px;
+}
+.label_size_2{
+	font-size: 18px;
+}
+.label_size_3{
+	font-size: 35px;
+}
+.label_size_4{
+	font-size: 24px;
+}
+.label_size_5{
+	font-size: 12px;
 }
 .label_2{
 	color: #9d9e9f;
@@ -272,6 +300,10 @@ body{
 	color: #666666;
 	font-size: 16px;
 	font-family: "Microsoft YaHei";
+}
+.label_font_arial{
+	font-family: Arial;
+	font-weight: bold;
 }
 .a_decoration, .a_decoration:hover, .a_decoration:focus{
 	text-decoration: none;
@@ -530,6 +562,15 @@ body{
 	line-height: 10px;
 	font-size: 12px;
 }
+.progress-index {
+	height: 12px !important;
+	line-height: 10px;
+	font-size: 12px;
+	background: #038cfd !important;
+}
+.bar-index {
+	background: #0a5996 !important;
+}
 .sui-progress .bar-custom{
 	background: #038cfd !important;
 }
@@ -559,6 +600,6 @@ body{
 
 .sui-btn-radius {
 
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
+	border-radius: 5px !important;
+	-webkit-border-radius: 5px !important;
 }
