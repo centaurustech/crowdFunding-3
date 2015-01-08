@@ -6,12 +6,14 @@
     <title>首页</title>
     <link href="../css/home.css" rel="stylesheet" type="text/css">
     <link href="../css/projects.css" rel="stylesheet" type="text/css">
+    <link href="../css/banner.css" rel="stylesheet" type="text/css">
     <link href="../../framework/odometer/themes/odometer-theme-default.css" rel="stylesheet" type="text/css">
     <link href="../../framework/carousel/style/style-demo.css" rel="stylesheet" type="text/css">
     <link href="http://g.tbcdn.cn/sj/wqui/1.0.0/css/sui.min.css" rel="stylesheet" type="text/css"/>
 
     <script type="text/javascript" src="../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="../js/tab.js"></script>
+    <script type="text/javascript" src="../js/slides.jquery.js"></script>
     <script type="text/javascript" src="../js/animation.js"></script>
 
     <script type="text/javascript" src="../../framework/odometer/js/odometer.js"></script>
@@ -20,14 +22,37 @@
 
 </head>
 
-<body style="text-align: center;">
-
+<body>
 <div class="container" style="width: 1900px; overflow: hidden;">
     <!-- 导航 -->
     <object width="1900" height="65" data="header.html"></object>
     <!-- banner -->
-    <div class="banner">
-        <img src="../image/banner.png" id="responsive_img">
+    <div class="banner" id="indexslider">
+        <div class="index-img">
+            <img src="../image/banner.png" class="responsive_img">
+            <img src="../image/banner.png" class="responsive_img">
+            <img src="../image/banner.png" class="responsive_img">
+            <img src="../image/banner.png" class="responsive_img">
+            <img src="../image/banner.png" class="responsive_img">
+        </div>
+        <ul class="index-pagination">
+            <li><a>
+                <div><span></span></div>
+            </a></li>
+            <li><a>
+                <div><span></span></div>
+            </a></li>
+            <li><a>
+                <div><span></span></div>
+            </a></li>
+            <li><a>
+                <div><span></span></div>
+            </a></li>
+            <li><a>
+                <div><span></span></div>
+            </a></li>
+            <li class="back"></li>
+        </ul>
     </div>
     <div class="pro_con" style="width: 1188px; overflow: hidden; height: auto; margin-top: 25px; margin-bottom: 20px;">
         <div class="text_animate">
@@ -419,19 +444,13 @@
         <a href="#"><span class="label_color_1">创业易众筹网</span></a><span>|</span>
         <a href="#"><span class="label_color_1">天使客众筹网</span></a>
 
-        <span class="sui-dropdown dropdown-bordered select" style="margin-left: 10px;">
-            <span class="dropdown-inner">
-                <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
-                    <input value="hz" name="city" type="hidden"><i class="caret"></i><span>更多</span>
-                </a>
-              <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
-              </ul>
-            </span>
-        </span>
+        <div class="sui-btn-group">
+            <button data-toggle="dropdown" class="sui-btn dropdown-toggle"><i class="caret"></i>更多</button>
+            <ul role="menu" aria-labelledby="drop1" class="sui-dropdown-menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">北京</a></li>
+                <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">杭州</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 <object width="100%" height="260" data="footer.html"></object>
@@ -453,7 +472,7 @@
 
     function fixfirstpage() {
         var windowW = $(window).width();
-        var fullimg = $('#responsive_img');
+        var fullimg = $('.responsive_img');
 
         var bl = parseFloat(1900 / 471); //图片大小比例
         fullimg.parent().css({"width": windowW, "height": windowW/bl});

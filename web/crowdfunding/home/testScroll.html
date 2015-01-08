@@ -1,69 +1,128 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>导航栏</title>
-<link href="../css/home.css" rel="stylesheet" type="text/css">
-<link href="http://g.tbcdn.cn/sj/wqui/1.0.0/css/sui.min.css" rel="stylesheet" type="text/css"/>
-<script src="http://g.tbcdn.cn/sj/wqui/1.0.0/js/sui.min.js"></script>
+
+<script type="text/javascript" src="../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
+<link href="../css/projects.css" rel="stylesheet" type="text/css">
+<body>
 <style type="text/css">
-    .nav{
-        width: 1112px !important;
-        padding-left: 18px;
-        padding-right: 18px;
+    .subNavBox{
+        width: 200px;
         margin: 0 auto;
+        height: auto;
+        border: 1px #000 solid;
     }
-    .nav-ul{
-        width: 60%;
-        float: left;
-    }
-    .nav .sui-brand{
-        margin-right: 10px;
-    }
-    .nav-ul li{
-        width: 130px;
-        float: left;
-        text-align: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        line-height: 35px;
-    }
-    #topnav .nav-ul li a{
+    .subNav{
+        height: 20px;
+        padding: 10px 15px 10px;
+        color: #343434;
+        font-family: "SimHei";
         font-size: 16px;
-        font-weight: 300;
-        color: #fff;
-        text-decoration: none;
-        text-shadow: 0 1px 0 #fff;
+        background: #f9f9f9;
     }
-    .logo{
+
+    .subNav div{
+        width: 18px;
+        height: 18px;
         float: left;
-        margin: 15px;
+        margin-right: 2px;
+        background: url("../image/li_open.png");
+    }
+    .currentDd div, .currentDd div{
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 2px;
+        background: url("../image/li_colse.png");
+    }
+    .currentDd, .currentDt, .subNav:hover, .subNav:focus{
+        color: #038cf6;
+    }
+    .navContent {
+        display: none;
+        padding: 0px;
+        margin: 0px;
+        background: #eeeeee;
+    }
+    .navContent li {
+        list-style: none;
+        padding-left: 48px;
+    }
+    .navContent li a{
+        font-family: "SimHei";
+        font-size: 14px;
+        color: #343434;
+        display: inline-block;
+        text-decoration: none;
+        height: 15px;
+        padding: 12px 2px 12px;
+        border-bottom: 1px #b6b6b6 dotted;
+    }
+    .navContent li a:hover, .navContent li:focus{
+        color: #038cf6;
+    }
+    .navContent li a img{
+        margin-left: -5px;
+        margin-right: 5px;
+        vertical-align: bottom;
     }
 </style>
-<div id="topnav">
-        <div class="nav">
-            <a href="#" class="logo">
-                <img src="../image/logo.png">
-            </a>
-            <ul class="nav-ul">
-                <li class="onNav"><a href="#">首页</a></li>
-                <li><a href="#">浏览项目</a></li>
-                <li><a href="#">发起项目</a></li>
-                <a class="col_text">全国</a>
-                <a class="col_text">[城市切换]</a>
-            </ul>
-            <div id="login">
-                <a href="#">登录</a>
-                <span>|</span>
-                <a href="#">注册</a>
-            </div>
-        </div>
+<div class="subNavBox">
+    <div class="subNav currentDd currentDt"><div></div>项目管理</div>
+    <ul class="navContent" style="display:block">
+        <li><a href="#" class="label_7"><img src="../image/li_type.png">我投资的项目</a></li>
+        <li><a href="#"><img src="../image/li_type.png">我发布的项目</a></li>
+        <li><a href="#"><img src="../image/li_type.png">我推荐的项目</a></li>
+    </ul>
+    <div class="subNav"><div></div>会员管理</div>
+    <ul class="navContent">
+        <li><a href="#" class="label_7"><img src="../image/li_type.png">个人资料</a></li>
+        <li><a href="#"><img src="../image/li_type.png">会员身份</a></li>
+    </ul>
+    <div class="subNav"><div></div>资金管理</div>
+    <ul class="navContent">
+        <li><a href="#" class="label_7"><img src="../image/li_type.png">快速充值</a></li>
+        <li><a href="#"><img src="../image/li_type.png">账户提现</a></li>
+    </ul>
+    <div class="subNav"><div></div>动态社区</div>
+    <ul class="navContent">
+        <li><a href="#" class="label_7"><img src="../image/li_type.png">我的关注</a></li>
+        <li><a href="#"><img src="../image/li_type.png">我的关注</a></li>
+    </ul>
+    <div class="subNav"><div></div>历史记录</div>
+    <ul class="navContent" class="label_7">
+        <li><a href="#"><img src="../image/li_type.png">我的关注</a></li>
+        <li><a href="#"><img src="../image/li_type.png">我的关注</a></li>
+    </ul>
+    <div class="subNav"><div ></div>认证中心</div>
+    <ul class="navContent" class="label_7">
+        <li><a href="#"><img src="../image/li_type.png">我的关注</a></li>
+        <li><a href="#"><img src="../image/li_type.png">我的关注</a></li>
+    </ul>
+    <div class="subNav"><div></div>安全中心</div>
+    <ul class="navContent">
+        <li><a href="#" class="label_7"><img src="../image/li_type.png">我的关注</a></li>
+        <li><a href="#"><img src="../image/li_type.png">我的关注</a></li>
+    </ul>
 </div>
+</body>
 <script type="text/javascript">
     $(function(){
-        $(".nav-ul a").click(function () {
-            if ($(this).has(".onNav")) {
-                $(".nav-ul a").removeClass("onNav");
-                $(this).addClass("onNav");
+        $(".subNav").click(function(){
+            $(this).toggleClass("currentDd").siblings(".subNav").removeClass("currentDd");
+            $(this).toggleClass("currentDt").siblings(".subNav").removeClass("currentDt");
+
+            // 修改数字控制速度， slideUp(500)控制卷起速度
+            $(this).next(".navContent").slideToggle(500).siblings(".navContent").slideUp(500);
+        });
+        $(".navContent").each(function(){
+            var y = $(this).children().last();
+            y.find("a").css("border-bottom", "none");
+        });
+
+        $(".navContent li").click(function () {
+            if ($(this).find("a").has(".label_7")) {
+                $(".navContent li a").removeClass("label_7");
+                $(this).find("a").addClass("label_7");
             }
         });
-    });
+    })
 </script>

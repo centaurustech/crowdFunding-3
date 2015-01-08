@@ -2,7 +2,7 @@
 
 body{
 	width: 100%;
-	background: #f8f8f8 !important;
+	background: #f5f5f5 !important;
 	height: auto;
 	margin: 0 auto;
 	padding: 0px;
@@ -114,10 +114,7 @@ body{
 	width: 64%;
 	text-align: right;
 }
-.pro_fillet{
-	border-radius:5px;
-	-moz-radius:5px;
-}
+
 .pro_form_color{
 	color: #ff0404;
 	margin-right: 5px;
@@ -183,6 +180,10 @@ body{
 	height: 26px;
 	padding-top: 2px !important;
 }
+.btn-width-8{
+	width: 60px;
+	height: 22px;
+}
 .btn-custom {
 	color: #fff !important;
 	background-color: #038cfd !important;
@@ -207,27 +208,11 @@ body{
 .pro_edit_bg img{
 	margin-top: -5px;
 }
-.pro_add_bg{
-	width: 290px;
-	height: 90px;
-	margin: 0 auto;
-	margin-top: 50px;
-	text-align: center;
-
-}
-.pro_add_1{
-	width: 100%;
-	height: 50%;
-	margin-top: 10px;
-}
-.pro_add_1 img{
-	margin-top: -5px;
-}
 .label-blue{
 	color: #036cbe;
 }
 .label_7{
-	color: #038cfd;
+	color: #038cfd !important;
 }
 .label_8{
 	 color: #8a8989;
@@ -305,6 +290,9 @@ body{
 	font-family: Arial;
 	font-weight: bold;
 }
+.label_font_simHei{
+	font-family: "SimHei";
+}
 .a_decoration, .a_decoration:hover, .a_decoration:focus{
 	text-decoration: none;
 }
@@ -363,34 +351,6 @@ body{
 	margin-top: 45px;
 	text-align: center;
 }
-.userInfo{
-	width: 716px;
-	height: 176px;
-	padding-left: 60px;
-	padding-top: 45px;
-	float: right;
-	background: #fff;
-}
-
-.userImg{
-	width: 86px;
-	height: 86px;
-	float: left;
-	background: #efefef;
-	overflow: hidden;
-	border: 1px #cfcfcf solid;
-}
-.userSpan{
-	width: 200px;
-	float: right;
-	height: 100%;
-}
-.userComplete{
-	width: 350px;
-	float: right;
-	height: 100%;
-	padding-right: 30px;
-}
 .tab_hide{
 	display: none
 }
@@ -421,13 +381,14 @@ body{
 .pro_1{
 	width: 100%;
 	margin-top: 100px;
-	background: #f8f8f8;
+	background: #f5f5f5;
 }
 .pro_2{
 	width: 100%;
 	height: auto;
 	margin-top: 30px;
-	background: #f8f8f8;
+	overflow: hidden;
+	background: #f5f5f5;
 }
 #tab2 .tab_menu{
 	width: 1112px;
@@ -485,25 +446,7 @@ body{
 .tab_box3{
 	margin-left: 32px;
 }
-.progress_1 {
-	height: 12px;
-	padding: 2px;
-	padding-bottom: 3px;
-	margin-top: 6px;
-	overflow: hidden;
-	background-color: #c8c8c8;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-}
-.progress-bar-1{
-	background: #038cfd !important;
-}
-.progress-box{
-	border-top: 1px #c8c8c8 solid;
-	-moz-box-shadow:0px -2px 10px #524e4e inset;
-	-webkit-box-shadow:0px -2px 10px #524e4e inset;
-	box-shadow:0px -2px 10px #524e4e inset;
-}
+
 .pro_context_title{
 	width: auto;
 	padding: 18px;
@@ -599,7 +542,220 @@ body{
 }
 
 .sui-btn-radius {
-
 	border-radius: 5px !important;
 	-webkit-border-radius: 5px !important;
+}
+
+
+
+
+
+
+
+/* 个人中心*/
+
+
+.in_head{
+	width: 100%;
+	height: 73px;
+}
+
+.in_head .head_img{
+	width: 90px;
+	height: 90px;
+	float: left;
+	margin-top: -20px;
+	margin-left: 35px;
+	margin-right: 20px;
+	vertical-align: bottom;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+}
+.in_head p{
+	padding-top: 20px;
+}
+.in_conf{
+	vertical-align: bottom;
+	margin-left: 5px;
+}
+
+.in_att{
+	width: 100%;
+	padding-left: 35px;
+	color: #fff;
+}
+.in_att span{
+	line-height: 18px;
+}
+.in_att_1{
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+}
+.in_s{
+	float: left;
+	font-size: 24px;
+	margin-top: 3px;
+	font-family: "Microsoft Yahei";
+	font-weight: 100;
+	margin-right: 10px;
+}
+.in_fans{
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.in_safety{
+	width: 540px;
+	margin-left: 120px;
+	margin-top: -20px;
+	float: left;
+}
+.in_safety span{
+	font-size: 16px;
+	color: #fff;
+	font-family: "SimHei";
+}
+.in_safety .sui-progress{
+	height: 8px;
+}
+.in_safety .progress-bar-1{
+	background: #c8c8c8 !important;
+	border: 2px #cecece solid;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.ins_bg{
+	background: url("../image/in_icon.png") no-repeat;
+}
+.ins_pos{
+	width: 28px;
+	height: 28px;
+	float: left;
+	margin-top: 27px;
+	margin-left: 8px;
+}
+.ins_1{
+	background-position: -118px -32px;
+	margin-right: -3px;
+}
+.ins_2{
+	background-position: -150px -32px;
+	margin-right: -3px;
+}
+.ins_3{
+	background-position: -180px -32px;
+}
+.ins_4{
+	background-position: -245px -32px;
+	margin-top: -8px;
+}
+.ins_5{
+	background-position: -310px -32px;
+	margin-top: -8px;
+}
+.progress-box{
+	margin-top: 6px;
+	border-bottom: 2px #aeaeae solid !important;
+}
+
+.in_mess{
+	float: right;
+	margin-top: 10px;
+	margin-right: 55px;
+}
+.in_mess span{
+	font-size: 14px;
+	float: left;
+	color: #fff;
+	font-family: "SimHei";
+}
+.subNavBox{
+	width: 200px;
+	height: 605px;
+	float: left;
+	background: #f9f9f9;
+	border: 1px #e6e6e6 solid;
+}
+.subNav{
+	height: 20px;
+	padding: 10px 15px 10px;
+	color: #343434;
+	font-family: "SimHei";
+	font-size: 16px;
+	background: #f9f9f9;
+	border-top: 1px #e6e6e6 solid;
+	border-bottom: 1px #e6e6e6 solid;
+	margin-top: -1px;
+}
+
+.subNav div{
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 2px;
+	background: url("../image/li_open.png");
+}
+.currentDd div, .currentDd div{
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 2px;
+	background: url("../image/li_colse.png");
+}
+.currentDd, .currentDt, .subNav:hover, .subNav:focus{
+	color: #038cf6;
+}
+.navContent {
+	display: none;
+	padding: 0px;
+	margin: 0px;
+	background: #eeeeee;
+}
+.navContent li {
+	list-style: none;
+	padding-left: 48px;
+}
+.navContent li a{
+	font-family: "SimHei";
+	font-size: 14px;
+	color: #343434;
+	display: inline-block;
+	text-decoration: none;
+	height: 15px;
+	padding: 12px 2px 12px;
+	border-bottom: 1px #b6b6b6 dotted;
+}
+.navContent li a:hover, .navContent li:focus{
+	color: #038cf6;
+}
+.navContent li a img{
+	margin-left: -5px;
+	margin-right: 5px;
+	vertical-align: bottom;
+}
+.subNavText{
+	width: 750px;
+	height: 605px;
+	margin-left: -1px;
+	float: left;
+	overflow: hidden;
+	background: #fff;
+	border: 1px #e6e6e6 solid;
+}
+.subNavHead{
+	width: 100%;
+	height: 20px;
+	padding: 5px 30px 5px;
+	background: #f9f9f9;
+}
+.subNavHead a, .subNavHead a:hover, .subNavHead:focus{
+	font-size: 14px;
+	color: #038cf6;
+	text-decoration: none;
+	margin-right: 5px;
+}
+.subNavText .tab_box1,.subNavText .tab_box2, .subNavText .tab_box3, .subNavText .tab_box4, .subNavText .tab_box5, .subNavText .tab_box16, .subNavText .tab_box7{
+	padding: 20px 30px 20px;
 }
