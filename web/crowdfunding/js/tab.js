@@ -19,42 +19,10 @@ $(document).ready(function(){
         $('div.tab_box3 > div').eq(index).show().siblings().hide();
     });
 
-    var $tab_lit1 = $('#navContent_1').find('li');
+    var $tab_lit1 = $('.subNavBox').find('li');
     $tab_lit1.click(function(){
         var index = $tab_lit1.index(this);
-        $('div.tab_box1 > div').eq(index).show().siblings().hide();
-        $('#subNavLi').text(this.textContent);
+        $('div.tab_box > div').eq(index).show().siblings().hide();
+        $('#subNavLi').text($(this).text());
     });
-    var $tab_lit2 = $('#navContent_2').find('li');
-    $tab_lit2.click(function(){
-        var index = $tab_lit2.index(this);
-        $('div.tab_box2 > div').eq(index).show().siblings().hide();
-    });
-    var $tab_lit3 = $('#navContent_3').find('li');
-    $tab_lit3.click(function(){
-        var index = $tab_lit3.index(this);
-        $('div.tab_box3 > div').eq(index).show().siblings().hide();
-    });
-    var $tab_lit4 = $('#navContent_4').find('li');
-    $tab_lit4.click(function(){
-        var index = $tab_lit4.index(this);
-        $('div.tab_box4 > div').eq(index).show().siblings().hide();
-    });
-    var $tab_lit5 = $('#navContent_5').find('li');
-    $tab_lit5.click(function(){
-        var index = $tab_lit5.index(this);
-        $('div.tab_box5 > div').eq(index).show().siblings().hide();
-    });
-    var $tab_lit6 = $('#navContent_6').find('li');
-    $tab_lit6.click(function(){
-        var index = $tab_lit6.index(this);
-        $('div.tab_box6 > div').eq(index).show().siblings().hide();
-    });
-    var $tab_lit7 = $('#navContent_7').find('li');
-    $tab_lit7.click(function(){
-        var index = $tab_lit7.index(this);
-        $('div.tab_box7 > div').eq(index).show().siblings().hide();
-    });
-
-
 });

@@ -756,6 +756,6 @@ body{
 	text-decoration: none;
 	margin-right: 5px;
 }
-.subNavText .tab_box1,.subNavText .tab_box2, .subNavText .tab_box3, .subNavText .tab_box4, .subNavText .tab_box5, .subNavText .tab_box16, .subNavText .tab_box7{
+.subNavText .tab_box{
 	padding: 20px 30px 20px;
 }

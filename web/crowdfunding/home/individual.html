@@ -18,7 +18,7 @@
 <!-- 导航 -->
 <div class="container">
     <!-- 导航 -->
-    <object width="1900" height="65" data="header.html"></object>
+    <object width="100%" height="65" data="header.html"></object>
     <div>
         <div class="pro_1" style="height: 113px; margin-top: 50px; background: #474284;">
             <div class="pro_con" style="width: 954px;">
@@ -62,38 +62,38 @@
             <div class="subNavBox">
                 <div style="height: 60px;"></div>
                 <div class="subNav currentDd currentDt"><div></div>项目管理</div>
-                <ul class="navContent" id="navContent_1" style="display:block">
+                <ul class="navContent" style="display:block">
                     <li><a href="#" class="label_7"><img src="../image/li_type.png">我投资的项目</a></li>
                     <li><a href="#"><img src="../image/li_type.png">我发布的项目</a></li>
                     <li><a href="#"><img src="../image/li_type.png">我推荐的项目</a></li>
                 </ul>
                 <div class="subNav"><div></div>会员管理</div>
-                <ul class="navContent" id="navContent_2">
+                <ul class="navContent">
                     <li><a href="#" class="label_7"><img src="../image/li_type.png">个人资料</a></li>
                     <li><a href="#"><img src="../image/li_type.png">会员身份</a></li>
                 </ul>
                 <div class="subNav"><div></div>资金管理</div>
-                <ul class="navContent" id="navContent_3">
+                <ul class="navContent">
                     <li><a href="#" class="label_7"><img src="../image/li_type.png">快速充值</a></li>
                     <li><a href="#"><img src="../image/li_type.png">账户提现</a></li>
                 </ul>
                 <div class="subNav"><div></div>动态社区</div>
-                <ul class="navContent" id="navContent_4">
+                <ul class="navContent">
                     <li><a href="#" class="label_7"><img src="../image/li_type.png">我的关注</a></li>
                     <li><a href="#"><img src="../image/li_type.png">我的关注</a></li>
                 </ul>
                 <div class="subNav"><div></div>历史记录</div>
-                <ul class="navContent" id="navContent_5">
+                <ul class="navContent">
                     <li><a href="#" class="label_7"><img src="../image/li_type.png">我的关注</a></li>
                     <li><a href="#"><img src="../image/li_type.png">我的关注</a></li>
                 </ul>
                 <div class="subNav"><div></div>认证中心</div>
-                <ul class="navContent" id="navContent_6">
+                <ul class="navContent">
                     <li><a href="#" class="label_7"><img src="../image/li_type.png">我的关注</a></li>
                     <li><a href="#"><img src="../image/li_type.png">我的关注</a></li>
                 </ul>
                 <div class="subNav"><div></div>安全中心</div>
-                <ul class="navContent" id="navContent_7">
+                <ul class="navContent">
                     <li><a href="#" class="label_7"><img src="../image/li_type.png">我的关注</a></li>
                     <li><a href="#"><img src="../image/li_type.png">我的关注</a></li>
                 </ul>
@@ -104,20 +104,13 @@
                     <a href="#" id="subNavUl">项目管理</a><span>&gt;</span>
                     <a href="#" id="subNavLi">我投资的项目</a>
                 </div>
-                <div class="tab_box1">
+                <div class="tab_box">
                     <div>我投资的项目</div>
                     <div class="tab_hide">我发布的项目</div>
                     <div class="tab_hide">我推荐的项目</div>
-                </div>
-                <div class="tab_box2">
                     <div class="tab_hide">个人资料</div>
                     <div class="tab_hide">会员身份</div>
                 </div>
-                <div class="tab_box3"></div>
-                <div class="tab_box4"></div>
-                <div class="tab_box5"></div>
-                <div class="tab_box6"></div>
-                <div class="tab_box7"></div>
             </div>
         </div>
     </div>
@@ -133,8 +126,20 @@
 
             // 修改数字控制速度， slideUp(500)控制卷起速度
             $(this).next(".navContent").slideToggle(500).siblings(".navContent").slideUp(500);
-            $('#subNavUl').text(this.textContent);
-            $('#subNavli').text(this.nextElementSibling.first().text());
+
+            // 设置首个li为默认选中状态
+            if ($(this).find("a").has(".label_7")) {
+                $(this).parent().find("li a").removeClass("label_7");
+                $(this).next().find('li').first().find("a").addClass("label_7");
+            }
+
+            // 设置首个li对应的内容显示
+            var index = $('.subNavBox').find('li').index($(this).next().find('li').first());
+            $('div.tab_box > div').eq(index).show().siblings().hide();
+
+            // 设置导航
+            $('#subNavUl').text($(this).text());
+            $('#subNavLi').text($(this).next().find('li').first().text());
         });
         $(".navContent").each(function(){
             var y = $(this).children().last();
