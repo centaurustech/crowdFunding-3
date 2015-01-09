@@ -16,18 +16,26 @@
             <img src="../image/logo.png">
         </a>
         <ul class="nav-ul">
-            <li class="onNav"><a href="index.html">首页</a></li>
+            <li class="onNav"><a href="#">首页</a></li>
             <li><a href="#">浏览项目</a></li>
-            <li><a href="projects/basicInfo.html">发起项目</a></li>
+            <li><a href="#">发起项目</a></li>
             <a class="col_text">全国</a>
             <a class="col_text">[城市切换]</a>
         </ul>
-        <div id="login">
-            <a href="#">登录</a>
-            <span>|</span>
-            <a href="#">注册</a>
+        <div id="in_head" class="onNav">
+            <img src="../image/founder.png">
         </div>
     </div>
+</div>
+<div class="head_pop">
+    <ul>
+        <li><a href="#"><div class="ins_bg in_center"></div>个人中心</a> </li>
+        <li><a href="#"><div class="ins_bg pro_manage"></div>项目管理</a> </li>
+        <li><a href="#"><div class="ins_bg me_manage"></div>会员管理</a> </li>
+        <li><a href="#"><div class="ins_bg cap_manage"></div>资金管理</a> </li>
+        <li><a href="#"><div class="ins_bg message"></div>消息<span style="color: #e12a2b;">(0)</span></a> </li>
+        <li><a href="#"><div class="ins_bg back"></div>退出</a> </li>
+    </ul>
 </div>
 <script type="text/javascript">
     $(function(){
@@ -36,6 +44,16 @@
                 $(".nav-ul li").removeClass("onNav");
                 $(this).addClass("onNav");
             }
+        });
+        $(".head_pop").hide();
+        var width = $('#in_head').offset().left;
+        $('.head_pop').css('margin-left', width);
+        // 鼠标停在头像上
+        $("#in_head").mouseover(function(){
+            $(".head_pop").slideDown(500);
+        });
+        $("#in_head").mouseleave(function(){
+            $(".head_pop").slideUp(500);
         });
     });
 </script>

@@ -184,15 +184,20 @@ body{
 	width: 60px;
 	height: 22px;
 }
+.btn-width-8{
+	width: 88px;
+	height: 28px;
+}
 .btn-custom {
 	color: #fff !important;
 	background-color: #038cfd !important;
 	border-color: #038cfd !important;
 }
-.btn-preview {
+.btn-preview, .btn-preview:hover, .btn-preview:focus {
 	color: #656565;
 	background-color: #cccccc;
 	border-color: #cccccc;
+	text-decoration: none;
 }
 .btn-custom:hover, .btn-custom:focus {
 	color: #fff !important;
@@ -265,6 +270,9 @@ body{
 .label_size_5{
 	font-size: 12px;
 }
+.label_size_6{
+	font-size: 16px;
+}
 .label_2{
 	color: #9d9e9f;
 	font-size: 22px;
@@ -292,6 +300,9 @@ body{
 }
 .label_font_simHei{
 	font-family: "SimHei";
+}
+.label_font_yaHei{
+	font-family: "Microsoft YaHei";
 }
 .a_decoration, .a_decoration:hover, .a_decoration:focus{
 	text-decoration: none;
@@ -560,6 +571,10 @@ body{
 	height: 73px;
 }
 
+.in_dyc{
+	width: 100%;
+	height: 73px;
+}
 .in_head .head_img{
 	width: 90px;
 	height: 90px;
@@ -571,8 +586,16 @@ body{
 	border-radius: 50px;
 	-webkit-border-radius: 50px;
 }
+.in_dyc .head_img{
+	clear: both;
+	margin-top: 10px !important;
+	margin-right: 30px;
+}
 .in_head p{
 	padding-top: 20px;
+}
+.in_dyc p{
+	padding-top: 25px;
 }
 .in_conf{
 	vertical-align: bottom;
@@ -674,6 +697,7 @@ body{
 .subNavBox{
 	width: 200px;
 	height: 605px;
+	overflow: hidden;
 	float: left;
 	background: #f9f9f9;
 	border: 1px #e6e6e6 solid;
@@ -759,3 +783,139 @@ body{
 .subNavText .tab_box{
 	padding: 20px 30px 20px;
 }
+
+/* dynamic start*/
+.dyn_att{
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+.dyn_ta{
+	width: 746px;
+	float: right;
+	background: #fff;
+	box-shadow:0px 0px 5px #f2f2f2;
+	-webkit-box-shadow: 0px 0px 5px #f2f2f2;
+}
+.att{
+	background: #fff;
+	margin-bottom: 10px;
+	box-shadow:0px 0px 5px #f2f2f2;
+	-webkit-box-shadow: 0px 0px 5px #f2f2f2;
+}
+.att img{
+	margin: 15px 20px 10px;
+}
+
+.att ul{
+	margin: 0px;
+	padding: 0px 15px 0px;
+}
+.att ul li{
+	list-style: none;
+	border-bottom: 1px #f3f3f3 solid;
+	padding: 3px 10px 3px;
+	line-height: 23px;
+	font-family: "SimHei";
+	font-size: 14px;
+	font-weight: 300;
+}
+.letter{
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 1px;
+	margin-left: 5px;
+	background-position: -90px -170px;
+}
+.att_investor{
+	width: 12px;
+	height: 13px;
+	float: left;
+	margin-top: 4px;
+	margin-right: 8px;
+	background-position: -90px -86px;
+}
+.att_address{
+	width: 12px;
+	height: 14px;
+	float: left;
+	margin-top: 4px;
+	margin-right: 8px;
+	background-position: -90px -113px;
+}
+.att_help{
+	width: 12px;
+	height: 24px;
+	float: left;
+	overflow: hidden;
+	margin-top: 4px;
+	margin-right: 8px;
+	background-position: -90px -138px;
+}
+.att_more{
+	padding: 10px 5px 10px;
+	text-align: center;
+	margin-top: 10px;
+	border-top: 1px #f3f3f3 solid;
+}
+.att_more a, .att_more a:hover, .att_more a:focus{
+	font-family: "SimHei";
+	font-size: 14px;
+	color: #343434;
+	text-decoration: none;
+}
+.att_title{
+	font-family: "SimHei";
+	font-size: 16px;
+	font-weight: 300;
+	padding: 15px 15px;
+}
+.att_imgList{
+	margin: 0px 8px;
+	padding-bottom: 5px;
+	overflow: hidden;
+	border-bottom: 1px #f3f3f3 solid;
+}
+.att_imgDiv{
+	width: 60px;
+	float: left;
+	text-align: center;
+}
+.att_imgDiv img{
+	margin: 0px;
+}
+#tab4{
+	height: 55px;
+	padding: 0px ;
+	text-align: center;
+	background: #f9f9f9;
+	border: 1px #f8f8f8 solid;
+}
+#tab4 .tab_menu{
+	padding: 0px 125px;
+	text-align: center;
+	overflow: hidden;
+}
+#tab4 .tab_menu li{
+	width: 100px;
+	padding: 18px 0px 18px;
+	margin-right: 50px;
+	text-align: center;
+	float: left;
+	list-style: none;
+}
+#tab4 .tab_menu li a, #tab4 .tab_menu li a:hover, #tab4 .tab_menu li a:focus{
+	font-family: "SimHei";
+	font-size: 16px;
+	color: #343434;
+}
+.tab_box4{
+	height: 423px;
+	padding: 20px 35px;
+}
+.selected_4{
+	border-bottom: 3px #038cf6 solid;
+}
+/* dynamic end*/

@@ -19,6 +19,13 @@ $(document).ready(function(){
         $('div.tab_box3 > div').eq(index).show().siblings().hide();
     });
 
+    var $tab_li4 = $('#tab4').find('ul li');
+    $tab_li4.click(function(){
+        $(this).addClass("selected_4").siblings().removeClass("selected_4");
+        var index = $tab_li4.index(this);
+        $('div.tab_box4 > div').eq(index).show().siblings().hide();
+    });
+
     var $tab_lit1 = $('.subNavBox').find('li');
     $tab_lit1.click(function(){
         var index = $tab_lit1.index(this);
