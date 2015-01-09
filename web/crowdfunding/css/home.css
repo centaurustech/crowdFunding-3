@@ -133,8 +133,8 @@ body a{
 	height: 211px;
 	top: 65px;
 	background: rgba(0,0,0,0.6);
-	box-shadow: 1px 0.5px 1px 1px #c9c9c9;
-	-webkit-box-shadow: 1px 0.5px 1px 1px rgba(36,36,36, .5);
+	box-shadow: 1.5px 2px 1px 1px #c9c9c9;
+	-webkit-box-shadow: 1.5px 2px 1px 1px rgba(0,0,0, 0.1);
 	z-index: 200;
 	position: absolute;
 }
@@ -353,7 +353,7 @@ body a{
 	margin-top: -2px;
 	margin-right: 5px;
 }
-.spt_list .spt_list_div .sui-progress{
+.spt_list_div .sui-progress{
 	height: 9px !important;
 	background: #97d6ff !important;
 }

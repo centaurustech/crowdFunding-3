@@ -913,9 +913,106 @@ body{
 }
 .tab_box4{
 	height: 423px;
-	padding: 20px 35px;
+	padding: 20px 0px;
 }
+.tab_box4 .spt_list_div{
+	clear: both;
+	width: 518px;
+	height: 170px;
+}
+
 .selected_4{
 	border-bottom: 3px #038cf6 solid;
+}
+.dyn_div{
+	width: auto;
+	margin-bottom: 20px;
+	margin-right: 100px;
+	overflow: hidden;
+	border: 1px #cccccc solid;
+}
+.dynDiv_img{
+	width: 254px;
+	float: left;
+	padding: 1px;
+}
+.dynDiv_text{
+	width: 240px;
+	float: right;
+	overflow: hidden;
+	padding: 0px 10px;
+}
+.dynDiv_text .dynDiv_tile{
+	font-size: 18px;
+	color: #282828;
+}
+
+.dynDiv_text p{
+	line-height: 1px;
+}
+.dyn_div p img{
+	margin-top: -2px;
+	margin-right: 5px;
+}
+.dyn_div .sui-progress{
+	height: 9px !important;
+	background: #97d6ff !important;
+}
+.dynDiv_fot{
+	height: 18px;
+	padding: 10px 10px;
+	overflow: hidden;
+	background: #f5f5f5;
+}
+.dynDiv_fot a{
+	margin-top: -4px;
+	float: right;
+}
+.dynDiv_border {
+	border: 1px #e1e1e1 solid;
+}
+.dynDiv_comment{
+	width: 550px;
+	float: right;
+	font-family: "SimHei";
+	padding-right: 15px;
+	height: auto;
+	border: 1px #000 solid;
+}
+.dynDiv_comment label{
+	line-height: 20px;
+	display: block;
+}
+.com_title{
+	font-size: 16px;
+	color: #343434;
+}
+.com_time{
+	font-size: 14px;
+	color: #343434;
+}
+.com_text{
+	font-size: 14px
+	color: #999999;
+}
+
+.tooltips{
+	position:relative;
+	background:#D7E7FC;
+	padding: 10px;
+	border-radius:4px;
+}
+.arrow{
+	position: absolute;
+	color: #D7E7FC;
+	width: 0px;
+	height: 0px;
+	line-height: 0px;
+	border-width: 20px 15px 0;
+	border-style: solid dashed dashed dashed;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	bottom: -20px;
+	right: 50%;
 }
 /* dynamic end*/
