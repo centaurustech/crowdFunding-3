@@ -156,7 +156,7 @@
                     <div class="pro_context" style="float: right; background: none">
                         <div class="pro_mes" style="width: 344px; height: 294px;">
                             <div class="pro_edit_bg">
-                                <a href="#">
+                                <a href="javascript:void(0);" id="edit">
                                     <img src="../../image/edit.png"/>
                                 </a>
                                 <span class="label-blue">修改基本信息</span>
@@ -258,6 +258,144 @@
         </div>
     </div>
 </div>
+<div id="editText" class="pro_form" style="display: none;padding-bottom: 20px; border: 1px #e0e0e0 solid;">
+    <form class="sui-form form-horizontal" style="width: 60%;margin: 0 auto;" action="editProject.html">
+        <header><span class="pro_form_color label_size_1">请不要落下带&nbsp;*&nbsp;号的，因为那是必填项</span></header>
+        <div class="control-group">
+            <label class="control-label label_size_1"><span class="pro_form_color">*</span>项目名称</label>
+            <div class="controls">
+                <input type="text" class="input-large">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label label_size_1"><span class="pro_form_color">*</span>项目金额</label>
+            <div class="controls">
+                <input type="text" class="input-large">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label label_size_1"><span class="pro_form_color">*</span>筹集天数</label>
+            <div class="controls">
+                <input type="text" class="input-large">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label label_size_1">
+                <span class="pro_form_color">*</span>行业类别
+            </label>
+            <div class="controls">
+                        <span class="sui-dropdown dropdown-bordered select">
+                            <span class="dropdown-inner">
+                                <a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                    <input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>
+                                </a>
+                              <ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+                                  <li role="presentation" class="divider"></li>
+                                  <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+                              </ul>
+                            </span>
+                        </span>
+            </div>
+            <div class="controls">
+                        <span class="sui-dropdown dropdown-bordered select">
+                            <span class="dropdown-inner">
+                                <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                    <input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>
+                                </a>
+                              <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+                                  <li role="presentation" class="divider"></li>
+                                  <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+                              </ul>
+                            </span>
+                        </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label label_size_1">
+                <span class="pro_form_color">*</span>项目地点
+            </label>
+            <div class="controls">
+                        <span class="sui-dropdown dropdown-bordered select">
+                            <span class="dropdown-inner">
+                                <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                    <input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>
+                                </a>
+                              <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+                                  <li role="presentation" class="divider"></li>
+                                  <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+                              </ul>
+                            </span>
+                        </span>
+            </div>
+            <div class="controls">
+                        <span class="sui-dropdown dropdown-bordered select">
+                            <span class="dropdown-inner">
+                                <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                    <input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>
+                                </a>
+                              <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+                                  <li role="presentation" class="divider"></li>
+                                  <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+                              </ul>
+                            </span>
+                        </span>
+            </div>
+            <div class="controls">
+                        <span class="sui-dropdown dropdown-bordered select">
+                            <span class="dropdown-inner">
+                                <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                    <input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>
+                                </a>
+                              <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+                                  <li role="presentation" class="divider"></li>
+                                  <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+                              </ul>
+                            </span>
+                        </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label label_size_1" style="margin-top: -20px;">
+                <span class="pro_form_color">*</span>项目封面
+            </label>
+            <div class="controls">
+                        <span class="input-file sui-btn-1 sui-btn-radius btn-preview" style="border: 1px #ccc solid; margin-top: -20px;">
+                            选择文件<input id="fileupload" type="file" name="files[]" multiple>
+                        </span>
+            </div>
+            <div class="controls">
+                <span style="color: #000;">支持jpg、jpeg、png、gif格式，大小不超过2M。<br>最佳尺寸：248 x 260px</span>
+            </div>
+        </div>
+        <div class="control-group text_position_c">
+            <div class="controls">
+                <label data-toggle="checkbox" class="checkbox-pretty inline checked">
+                    <input type="checkbox">
+                    <span style="font-weight: 700;">我已经阅读并同意《<a class="trust" href="#">委托融资服务协议</a>》</span>
+                </label>
+            </div>
+        </div>
+        <div class="control-group text_position_c">
+            <div class="controls">
+                <button type="submit" class="sui-btn btn-custom btn-width-1 sui-btn-radius">
+                    <span class="label_1">下一步</span>
+                </button>
+            </div>
+        </div>
+
+    </form>
+</div>
 <object width="100%" height="260" data="../footer.html"></object>
 <script type="text/javascript">
     $(function() {
@@ -271,13 +409,18 @@
 
         // 鼠标停在头像上
         $("#head_detail").hide();
-        $("#pro_head").mouseover(function(){
+        $("#pro_head").mouseenter(function(){
             $("#head_detail").show();
             $(".pro_context_body").hide();
         });
         $("#head_detail").mouseleave(function(){
             $("#head_detail").hide();
             $(".pro_context_body").show();
+        });
+
+        $('#edit').click(function(){
+            $.alert($('#editText').html()
+            );
         });
     });
 </script>

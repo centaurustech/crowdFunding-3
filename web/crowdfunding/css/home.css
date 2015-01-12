@@ -109,16 +109,17 @@ body a{
 	color: #fff;
 }
 
+.head_div{
+	top: 0px;
+	position: fixed;
+	z-index: 300;
+}
 #in_head{
-	float: right;
-	padding: 5px 8px 5px;
-	overflow: hidden;
-	/*top: 0px;
-	left: 80%;
-	position: absolute;
-	z-index: 300;*/
+	padding: 5px 10px;
+	float: left;
 	color: #fff;
 }
+
 #in_head img{
 	width: 53px;
 	height: 53px;
@@ -130,7 +131,7 @@ body a{
 }
 .head_pop{
 	width: 138px;
-	height: 211px;
+	height: 215px;
 	top: 65px;
 	background: rgba(0,0,0,0.6);
 	box-shadow: 1.5px 2px 1px 1px #c9c9c9;
@@ -142,12 +143,11 @@ body a{
 	width: 100%;
 	height: 100%;
 	margin: 0px;
-	padding-top: 1px;
 }
 .head_pop ul li{
-	padding: 7px;
+	padding: 8px;
 	list-style: none;
-	border: 1px #4d4d4d solid;
+	border-bottom: 1px #4d4d4d solid;
 }
 .head_pop ul li a, .head_pop ul li a:hover, .head_pop ul li a:focus{
 	color: #fff;
@@ -344,6 +344,7 @@ body a{
 	font-size: 18px;
 	color: #282828;
 	padding-left: 10px;
+	padding-top: 18px;
 }
 .spt_list .spt_list_div p{
 	line-height: 15px;

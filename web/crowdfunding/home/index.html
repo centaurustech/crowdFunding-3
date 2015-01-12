@@ -469,6 +469,16 @@
         numberScroll('ap_num', 872149267.25);
         numberScroll('s_monty', 83730419);
 
+
+        $('.spt_list_div img').mouseover(function(){
+            $(this).css('border', '1px #cccccc solid');
+            $(this).css('margin', '0px');
+        });
+        $('.spt_list_div img').mouseleave(function(){
+            $(this).css('border', 'none');
+            $(this).css('margin', '1px');
+        });
+
     });
 
     function fixfirstpage() {

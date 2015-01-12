@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="http://g.tbcdn.cn/sj/wqui/1.0.0/css/sui.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="../css/projects.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script src="http://g.tbcdn.cn/sj/wqui/1.0.0/js/sui.min.js"></script>
+    <style type="text/css">
+        .modal-header{
+            padding: 20px !important;
+            background: #efefef !important;
+        }
+        .modal-header span{
+            font-family: "SimHei";
+            font-size: 22px;
+            color: #000000;
+        }
+        .sui-close{
+            margin-top: -5px;
+        }
+    </style>
+</head>
+<body>
+<button data-toggle="modal" data-target="#myModal" data-keyboard="false" class="sui-btn btn-primary btn-lg">对话框已写入html</button>
+<!-- Modal-->
+<div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide" style="width: 548px; height: 502px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close"><img src="../image/btn_close.png"></button>
+                <span id="myModalLabel" class="modal-title"></span>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" data-ok="modal" class="sui-btn btn-primary btn-large"></button>
+                <button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="editText" class="pro_form" style="display: none;border: 1px #e0e0e0 solid; ">
+    <form class="sui-form form-horizontal" style="margin: 22px auto;" action="editProject.html">
+
+        <div class="control-group">
+            <label class="control-label label_size_1"><span class="pro_form_color">*</span>项目名称</label>
+            <div class="controls">
+                <input type="text" class="input-large">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label label_size_1"><span class="pro_form_color">*</span>项目金额</label>
+            <div class="controls">
+                <input type="text" class="input-large">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label label_size_1"><span class="pro_form_color">*</span>筹集天数</label>
+            <div class="controls">
+                <input type="text" class="input-large">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label label_size_1">
+                <span class="pro_form_color">*</span>行业类别
+            </label>
+            <div class="controls">
+                <span class="sui-dropdown dropdown-bordered select">
+                    <span class="dropdown-inner">
+                        <a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>
+                        </a>
+                      <ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+                      </ul>
+                    </span>
+                </span>
+            </div>
+            <div class="controls">
+                <span class="sui-dropdown dropdown-bordered select">
+                    <span class="dropdown-inner">
+                        <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>
+                        </a>
+                      <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+                      </ul>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label label_size_1">
+                <span class="pro_form_color">*</span>项目地点
+            </label>
+            <div class="controls">
+                <span class="sui-dropdown dropdown-bordered select">
+                    <span class="dropdown-inner">
+                        <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>
+                        </a>
+                      <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+                      </ul>
+                    </span>
+                </span>
+            </div>
+            <div class="controls">
+                <span class="sui-dropdown dropdown-bordered select">
+                    <span class="dropdown-inner">
+                        <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>
+                        </a>
+                      <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+                      </ul>
+                    </span>
+                </span>
+            </div>
+            <div class="controls">
+                <span class="sui-dropdown dropdown-bordered select">
+                    <span class="dropdown-inner">
+                        <a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>
+                        </a>
+                      <ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+                      </ul>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label label_size_1" style="margin-top: -20px;">
+                <span class="pro_form_color">*</span>项目封面
+            </label>
+            <div class="controls">
+                <span class="input-file sui-btn-1 sui-btn-radius btn-preview" style="border: 1px #ccc solid; margin-top: -20px;">
+                    选择文件<input id="fileupload" type="file" name="files[]" multiple>
+                </span>
+            </div>
+            <div class="controls">
+                <span style="color: #000;">支持jpg、jpeg、png、gif格式，大小不超过2M。<br>最佳尺寸：248 x 260px</span>
+            </div>
+        </div>
+        <br><br>
+        <div class="control-group text_position_c">
+            <div class="controls">
+                <button type="submit" class="sui-btn btn-custom btn-width-1 sui-btn-radius">
+                    <span class="label_font_simHei label_size_7">确认修改</span>
+                </button>
+            </div>
+        </div>
+
+    </form>
+</div>
+<script>
+    $('#myModal').on('okHide', modal('修改基本信息', $('#editText').html(), null, null));
+
+    function modal(title, body, btn1, btn2){
+        $('#myModalLabel').html(title);
+        $('.modal-body').html(body);
+        if (btn1 == null) {
+            $('.modal-footer').find('button').hide();
+        }
+        if (btn2 == null) {
+            $('.modal-footer').find('button')[1].hide();
+        }
+        console.log('okHide');
+    }
+</script>
+
+</body>
+</html>
