@@ -81,77 +81,77 @@
     }
 </style>
 <body>
-<button data-toggle="modal" data-target="#myModal" data-keyboard="false" class="sui-btn btn-primary btn-lg">对话框已写入html</button>
+<!--<button data-toggle="modal" data-target="#myModal" data-keyboard="false" class="sui-btn btn-primary btn-lg">对话框已写入html</button>-->
 
-<div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close"><img src="../../image/btn_close.png"></button>
-                <span id="myModalLabel" class="modal-title">视频修改</span>
+<!--<div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide">-->
+    <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close"><img src="../../image/btn_close.png"></button>-->
+                <!--<span id="myModalLabel" class="modal-title">视频修改</span>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!---->
+                <!--&lt;!&ndash;<div class="filedDiv">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<fieldset form="editVideo_from">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<legend>视频尺寸</legend>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<label>宽度</label>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<input type="text" class="input-mini"/>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<label>高度</label>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<input type="text" class="input-mini"/>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</fieldset>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--<button type="button" data-ok="modal" class="sui-btn btn-default btn-large sui-btn-radius">确定</button>-->
+                <!--<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large sui-btn-radius">取消</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<form class="sui-form form-horizontal" style="margin: 22px auto;" id="editVideo_from">
+    <div id="tab3">
+        <ul class="tab_menu">
+            <li class="selected_3"><a class="a_decoration" href="#"><span class="label_9">插入视频</span></a></li>
+            <li><a class="a_decoration" href="#"><span class="label_9">上传视频</span></a></li>
+        </ul>
+
+    </div>
+    <div class="tab_box3">
+        <div style="overflow:hidden;">
+            <div class="control-group">
+                <label class="control-label label_size_1">视频网址</label>
+                <div class="controls">
+                    <input type="text" placeholder="" class="input-xxlarge">
+                </div>
             </div>
-            <div class="modal-body">
-                <form class="sui-form form-horizontal" style="margin: 22px auto;" id="editVideo_from">
-                    <div id="tab3">
-                        <ul class="tab_menu">
-                            <li class="selected_3"><a class="a_decoration" href="#"><span class="label_9">插入视频</span></a></li>
-                            <li><a class="a_decoration" href="#"><span class="label_9">上传视频</span></a></li>
-                        </ul>
+            <video width="346" height="260" controls="controls" style="margin-left: 15px;">
+                <source src="../../video/movie.mp4" type="video/mp4">
+                <source src="../../video/movie.ogg" type="video/ogg">
+            </video>
 
-                    </div>
-                    <div class="tab_box3">
-                        <div style="overflow:hidden;">
-                            <div class="control-group">
-                                <label class="control-label label_size_1">视频网址</label>
-                                <div class="controls">
-                                    <input type="text" placeholder="" class="input-xxlarge">
-                                </div>
-                            </div>
-                            <video width="346" height="260" controls="controls" style="margin-left: 15px;">
-                                <source src="../../video/movie.mp4" type="video/mp4">
-                                <source src="../../video/movie.ogg" type="video/ogg">
-                            </video>
+        </div>
+        <div class="tab_hide">
+            <div style="overflow:hidden; border: 2px #dcdcdc dashed; width: 464px; height: 307px;margin: 0 auto;">
 
-                        </div>
-                        <div class="tab_hide">
-                            <div style="overflow:hidden; border: 2px #dcdcdc dashed; width: 464px; height: 307px;margin: 0 auto;">
-
-                                <div class="controls" style="text-align: center; display: block; margin-top: 80px;">
-                                    <img src="../../image/add_video.png">
-                                </div>
-                                <div class="controls">
+                <div class="controls" style="text-align: center; display: block; margin-top: 80px;">
+                    <img src="../../image/add_video.png">
+                </div>
+                <div class="controls">
                                     <span class="input-file sui-btn-1 sui-btn-radius btn-custom" style="padding: 15px; width: 158px; border: 1px #ccc solid; font-size: 16px;">
                                         点击选择文件<input id="fileupload" type="file" name="files[]" multiple style=" width: 158px; height: 50px;">
                                     </span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </form>
-                <!--<div class="filedDiv">-->
-                    <!--<fieldset form="editVideo_from">-->
-                        <!--<legend>视频尺寸</legend>-->
-                        <!--<div>-->
-                            <!--<label>宽度</label>-->
-                            <!--<input type="text" class="input-mini"/>-->
-                        <!--</div>-->
-                        <!--<div>-->
-                            <!--<label>高度</label>-->
-                            <!--<input type="text" class="input-mini"/>-->
-                        <!--</div>-->
-                    <!--</fieldset>-->
-                <!--</div>-->
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" data-ok="modal" class="sui-btn btn-default btn-large sui-btn-radius">确定</button>
-                <button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large sui-btn-radius">取消</button>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
+    </div>
+</form>
 
 </body>
 </html>

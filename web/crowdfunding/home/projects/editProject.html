@@ -144,7 +144,7 @@
                                         <li class="selected_3"><a class="a_decoration" href="#"><span class="label_9">插入视频</span></a></li>
                                         <li><a class="a_decoration" href="#"><span class="label_9">上传视频</span></a></li>
                                         <div class="pro_edit_bg">
-                                            <a href="editVideoPop.html" id="editVideo" data-toggle="modal" data-target="#myModal" data-keyboard="false">
+                                            <a  data-remote="editVideoPop.html" id="editVideo" data-toggle="modal" data-target="#myModal" data-keyboard="false">
                                                 <img src="../../image/edit.png"/>
                                             </a>
                                             <span class="label-blue">修改视频</span>
@@ -272,21 +272,17 @@
     </div>
 </div>
 <!-- 弹出层start -->
-<!--<div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">-->
-    <!--<div class="modal-dialog">-->
-        <!--<div class="modal-content">-->
-            <!--<div class="modal-header">-->
-                <!--<button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>-->
-                <!--<h4 id="myModalLabel" class="modal-title">Modal title</h4>-->
-            <!--</div>-->
-            <!--<div class="modal-body">我是内容body</div>-->
-            <!--<div class="modal-footer">-->
-                <!--<button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">可自定ok</button>-->
-                <!--<button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">可自定dismiss</button>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+<div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close"><img src="../../image/btn_close.png"></button>
+                <h4 id="myModalLabel" class="modal-title"></h4>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</div>
 <!-- 弹出层end -->
 <object width="100%" height="260" data="../footer.html"></object>
 <script type="text/javascript">
