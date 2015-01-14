@@ -90,7 +90,7 @@
 
                             <div id="jcl-demo">
                                 <div class="pro_edit_bg">
-                                    <a href="#" id="editService" data-toggle="modal" data-target="#myModal" data-keyboard="false">
+                                    <a data-remote="editServerPop.html" id="editService" data-toggle="modal" data-target="#myModal2" data-keyboard="false">
                                         <img src="../../image/edit.png"/>
                                     </a>
                                     <span class="label-blue">修改服务提供商</span>
@@ -169,7 +169,7 @@
                     <div class="pro_context" style="float: right; background: none">
                         <div class="pro_mes" style="width: 344px; height: 294px;">
                             <div class="pro_edit_bg">
-                                <a href="javascript:void(0);" id="editBasic" data-toggle="modal" data-target="#myModal" data-keyboard="false">
+                                <a data-remote="editBasicPop.html" id="editBasic" data-toggle="modal" data-target="#myModal1" data-keyboard="false">
                                     <img src="../../image/edit.png"/>
                                 </a>
                                 <span class="label-blue">修改基本信息</span>
@@ -272,7 +272,7 @@
     </div>
 </div>
 <!-- 弹出层start -->
-<div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">
+<div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false"  class="sui-modal hide fade">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -304,6 +304,13 @@
         $("#head_detail").mouseleave(function () {
             $("#head_detail").hide();
             $(".pro_context_body").show();
+        });
+
+        $('#editBasic').click(function(){
+            $('#myModalLabel').html('修改个人信息');
+        });
+        $('#editService').click(function(){
+            $('#myModalLabel').html('服务代理设置');
         });
     });
 </script>

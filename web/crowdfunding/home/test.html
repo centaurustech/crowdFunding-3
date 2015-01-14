@@ -1,195 +1,172 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <link href="http://g.tbcdn.cn/sj/wqui/1.0.0/css/sui.min.css" rel="stylesheet" type="text/css"/>
-    <link rel="prefetch" href="projects/editBasicPop.html">
-    <link href="../css/projects.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
-    <script src="http://g.tbcdn.cn/sj/wqui/1.0.0/js/sui.min.js"></script>
-    <style type="text/css">
-        .modal-header{
-            padding: 20px !important;
-            background: #efefef !important;
-        }
-        .modal-header span{
-            font-family: "SimHei";
-            font-size: 22px;
-            color: #000000;
-        }
-        .sui-close{
-            margin-top: -5px;
-        }
-    </style>
-</head>
-<!--<body>-->
-<!--<button data-toggle="modal" data-target="#myModal" data-keyboard="false" class="sui-btn btn-primary btn-lg">对话框已写入html</button>-->
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>pop弹出 dialog对话框</title>
 
-<!--<a data-toggle="modal" href="projects/editBasicPop.html" data-target="#myModal" data-keyboard="false">click me</a>-->
-<!-- Modal-->
-<div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide" style="width: 548px; height: 502px;">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close"><img src="../image/btn_close.png"></button>
-                <span id="myModalLabel" class="modal-title"></span>
-            </div>
-            <div class="modal-body"></div>
-            <div class="modal-footer">
-                <button type="button" data-ok="modal" class="sui-btn btn-primary btn-large"></button>
-                <button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large"></button>
-            </div>
+    <script type="text/javascript" src="../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../demo.css">
+    <style type="text/css">
+
+        #dialog-overlay {
+
+            /* set it to fill the whil screen */
+            width:100%;
+            height:100%;
+
+            /* transparency for different browsers */
+            filter:alpha(opacity=50);
+            -moz-opacity:0.5;
+            -khtml-opacity: 0.5;
+            opacity: 0.5;
+            background:#000;
+
+            /* make sure it appear behind the dialog box but above everything else */
+            position:absolute;
+            top:0; left:0;
+            z-index:3000;
+
+            /* hide it by default */
+            display:none;
+        }
+
+
+        #dialog-box {
+
+            /* css3 drop shadow */
+            -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+            /* css3 border radius */
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+
+            background:#eee;
+            /* styling of the dialog box, i have a fixed dimension for this demo */
+            width:328px;
+
+            /* make sure it has the highest z-index */
+            position:absolute;
+            z-index:5000;
+
+            /* hide it by default */
+            display:none;
+        }
+
+        #dialog-box .dialog-content {
+            /* style the content */
+            text-align:left;
+            padding:10px;
+            margin:13px;
+            color:#666;
+            font-family:arial;
+            font-size:11px;
+        }
+
+        a.button {
+            /* styles for button */
+            margin:10px auto 0 auto;
+            text-align:center;
+            background-color: #e33100;
+            display: block;
+            width:50px;
+            padding: 5px 10px 6px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            line-height: 1;
+
+            /* css3 implementation :) */
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+            text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+            border-bottom: 1px solid rgba(0,0,0,0.25);
+            position: relative;
+            cursor: pointer;
+
+        }
+
+        a.button:hover {
+            background-color: #c33100;
+        }
+
+        /* extra styling */
+        #dialog-box .dialog-content p {
+            font-weight:700; margin:0;
+        }
+
+        #dialog-box .dialog-content ul {
+            margin:10px 0 10px 20px;
+            padding:0;
+            height:50px;
+        }
+
+
+
+    </style>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            // if user clicked on button, the overlay layer or the dialogbox, close the dialog
+            $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {
+                $('#dialog-overlay, #dialog-box').hide();
+                return false;
+            });
+
+            // if user resize the window, call the same function again
+            // to make sure the overlay fills the screen and dialogbox aligned to center
+            $(window).resize(function () {
+
+                //only do it if the dialog box is not hidden
+                if (!$('#dialog-box').is(':hidden')) popup();
+            });
+
+
+        });
+
+        //Popup dialog
+        function popup(message) {
+
+            // get the screen height and width
+            var maskHeight = $(document).height();
+            var maskWidth = $(window).width();
+
+            // calculate the values for center alignment
+            var dialogTop =  (maskHeight/3) - ($('#dialog-box').height());
+            var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
+
+            // assign values to the overlay and dialog box
+            $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
+            $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
+
+            // display the message
+            $('#dialog-message').html(message);
+
+        }
+
+    </script>
+
+</head>
+
+
+<body onload="popup('<p>加载的时候弹出</p>')">
+<div id="main_demo">
+    <a href="javascript:popup('点击弹出')">点我!</a>
+
+    <div id="dialog-overlay"></div>
+    <div id="dialog-box">
+        <div class="dialog-content">
+            <div id="dialog-message"></div>
+            <a href="#" class="button">关闭</a>
         </div>
     </div>
+    <div style="height:20px;"></div>
+    <div align="center">
 </div>
-<!--<div id="editText" class="pro_form" style="display: none;border: 1px #e0e0e0 solid; ">-->
-    <!--<form class="sui-form form-horizontal" style="margin: 22px auto;" action="editProject.html">-->
-
-        <!--<div class="control-group">-->
-            <!--<label class="control-label label_size_1"><span class="pro_form_color">*</span>项目名称</label>-->
-            <!--<div class="controls">-->
-                <!--<input type="text" class="input-large">-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="control-group">-->
-            <!--<label class="control-label label_size_1"><span class="pro_form_color">*</span>项目金额</label>-->
-            <!--<div class="controls">-->
-                <!--<input type="text" class="input-large">-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="control-group">-->
-            <!--<label class="control-label label_size_1"><span class="pro_form_color">*</span>筹集天数</label>-->
-            <!--<div class="controls">-->
-                <!--<input type="text" class="input-large">-->
-            <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="control-group">-->
-            <!--<label class="control-label label_size_1">-->
-                <!--<span class="pro_form_color">*</span>行业类别-->
-            <!--</label>-->
-            <!--<div class="controls">-->
-                <!--<span class="sui-dropdown dropdown-bordered select">-->
-                    <!--<span class="dropdown-inner">-->
-                        <!--<a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">-->
-                            <!--<input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>-->
-                        <!--</a>-->
-                      <!--<ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">-->
-                          <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>-->
-                          <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>-->
-                          <!--<li role="presentation" class="divider"></li>-->
-                          <!--<li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>-->
-                      <!--</ul>-->
-                    <!--</span>-->
-                <!--</span>-->
-            <!--</div>-->
-            <!--<div class="controls">-->
-                <!--<span class="sui-dropdown dropdown-bordered select">-->
-                    <!--<span class="dropdown-inner">-->
-                        <!--<a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">-->
-                            <!--<input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>-->
-                        <!--</a>-->
-                      <!--<ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">-->
-                          <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>-->
-                          <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>-->
-                          <!--<li role="presentation" class="divider"></li>-->
-                          <!--<li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>-->
-                      <!--</ul>-->
-                    <!--</span>-->
-                <!--</span>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="control-group">-->
-            <!--<label class="control-label label_size_1">-->
-                <!--<span class="pro_form_color">*</span>项目地点-->
-            <!--</label>-->
-            <!--<div class="controls">-->
-                <!--<span class="sui-dropdown dropdown-bordered select">-->
-                    <!--<span class="dropdown-inner">-->
-                        <!--<a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">-->
-                            <!--<input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>-->
-                        <!--</a>-->
-                      <!--<ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">-->
-                          <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>-->
-                          <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>-->
-                          <!--<li role="presentation" class="divider"></li>-->
-                          <!--<li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>-->
-                      <!--</ul>-->
-                    <!--</span>-->
-                <!--</span>-->
-            <!--</div>-->
-            <!--<div class="controls">-->
-                <!--<span class="sui-dropdown dropdown-bordered select">-->
-                    <!--<span class="dropdown-inner">-->
-                        <!--<a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">-->
-                            <!--<input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>-->
-                        <!--</a>-->
-                      <!--<ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">-->
-                          <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>-->
-                          <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>-->
-                          <!--<li role="presentation" class="divider"></li>-->
-                          <!--<li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>-->
-                      <!--</ul>-->
-                    <!--</span>-->
-                <!--</span>-->
-            <!--</div>-->
-            <!--<div class="controls">-->
-                <!--<span class="sui-dropdown dropdown-bordered select">-->
-                    <!--<span class="dropdown-inner">-->
-                        <!--<a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">-->
-                            <!--<input value="hz" name="city" type="hidden"><i class="caret"></i><span>请选择</span>-->
-                        <!--</a>-->
-                      <!--<ul role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">-->
-                          <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>-->
-                          <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>-->
-                          <!--<li role="presentation" class="divider"></li>-->
-                          <!--<li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>-->
-                      <!--</ul>-->
-                    <!--</span>-->
-                <!--</span>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="control-group">-->
-            <!--<label class="control-label label_size_1" style="margin-top: -20px;">-->
-                <!--<span class="pro_form_color">*</span>项目封面-->
-            <!--</label>-->
-            <!--<div class="controls">-->
-                <!--<span class="input-file sui-btn-1 sui-btn-radius btn-preview" style="border: 1px #ccc solid; margin-top: -20px;">-->
-                    <!--选择文件<input id="fileupload" type="file" name="files[]" multiple>-->
-                <!--</span>-->
-            <!--</div>-->
-            <!--<div class="controls">-->
-                <!--<span style="color: #000;">支持jpg、jpeg、png、gif格式，大小不超过2M。<br>最佳尺寸：248 x 260px</span>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<br><br>-->
-        <!--<div class="control-group text_position_c">-->
-            <!--<div class="controls">-->
-                <!--<button type="submit" class="sui-btn btn-custom btn-width-1 sui-btn-radius">-->
-                    <!--<span class="label_font_simHei label_size_7">确认修改</span>-->
-                <!--</button>-->
-            <!--</div>-->
-        <!--</div>-->
-
-    <!--</form>-->
-<!--</div>-->
-<a data-toggle="modal" href="projects/editBasicPop.html" data-target="#myModal">click me</a>
-<script>
-//    $('#myModal').on('okHide', modal('修改基本信息', $('#editText').html(), null, null));
-//
-//    function modal(title, body, btn1, btn2){
-//        $('#myModalLabel').html(title);
-//        $('.modal-body').html(body);
-//        if (btn1 == null) {
-//            $('.modal-footer').find('button').hide();
-//        }
-//        console.log('okHide');
-//    }
-//    $(function(){
-//        $(".modal-body").load("editBasicPop.html");
-//    });
-</script>
-
 </body>
 </html>
