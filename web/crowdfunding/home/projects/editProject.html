@@ -20,21 +20,6 @@
 
     <script src="http://g.alicdn.com/sj/sui-editor/0.0.2/sui-editor.config.js"></script>
     <script src="http://g.alicdn.com/sj/sui-editor/0.0.2/editor/js/sui-editor.js"></script>
-    <style type="text/css">
-        .modal-header{
-            padding: 20px !important;
-            background: #efefef !important;
-        }
-        .modal-header span{
-            font-family: "SimHei";
-            font-size: 22px;
-            color: #000000;
-        }
-        .sui-close{
-            margin-top: -5px;
-        }
-    </style>
-
 </head>
 
 <body class="body_bg">
@@ -90,7 +75,7 @@
 
                             <div id="jcl-demo">
                                 <div class="pro_edit_bg">
-                                    <a data-remote="editServerPop.html" id="editService" data-toggle="modal" data-target="#myModal2" data-keyboard="false">
+                                    <a id="editService" data-toggle="modal" data-target="#myModal" data-keyboard="false">
                                         <img src="../../image/edit.png"/>
                                     </a>
                                     <span class="label-blue">修改服务提供商</span>
@@ -144,7 +129,7 @@
                                         <li class="selected_3"><a class="a_decoration" href="#"><span class="label_9">插入视频</span></a></li>
                                         <li><a class="a_decoration" href="#"><span class="label_9">上传视频</span></a></li>
                                         <div class="pro_edit_bg">
-                                            <a  data-remote="editVideoPop.html" id="editVideo" data-toggle="modal" data-target="#myModal" data-keyboard="false">
+                                            <a id="editVideo" data-toggle="modal" data-target="#myModal" data-keyboard="false">
                                                 <img src="../../image/edit.png"/>
                                             </a>
                                             <span class="label-blue">修改视频</span>
@@ -169,7 +154,7 @@
                     <div class="pro_context" style="float: right; background: none">
                         <div class="pro_mes" style="width: 344px; height: 294px;">
                             <div class="pro_edit_bg">
-                                <a data-remote="editBasicPop.html" id="editBasic" data-toggle="modal" data-target="#myModal1" data-keyboard="false">
+                                <a id="editBasic" data-toggle="modal" data-target="#myModal" data-keyboard="false">
                                     <img src="../../image/edit.png"/>
                                 </a>
                                 <span class="label-blue">修改基本信息</span>
@@ -307,12 +292,19 @@
         });
 
         $('#editBasic').click(function(){
+            $('#editBasic').attr('data-remote', 'editBasicPop.html');
             $('#myModalLabel').html('修改个人信息');
         });
         $('#editService').click(function(){
+            $('#editService').attr('data-remote', 'editServicePop.html');
             $('#myModalLabel').html('服务代理设置');
         });
+        $('#editVideo').click(function(){
+            $('#editVideo').attr('data-remote', 'editVideoPop.html');
+            $('#myModalLabel').html('视频修改');
+        });
     });
+    //--allow-file-access-from-files
 </script>
 </body>
 </html>

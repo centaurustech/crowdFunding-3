@@ -18,6 +18,12 @@ $(document).ready(function(){
         var index = $tab_li3.index(this);
         $('div.tab_box3 > div').eq(index).show().siblings().hide();
     });
+    var $tab_li5 = $('#tab5').find('ul li');
+    $tab_li5.click(function(){
+        $(this).addClass("selected_3").siblings().removeClass("selected_3");
+        var index = $tab_li5.index(this);
+        $('div.tab_box5 > div').eq(index).show().siblings().hide();
+    });
 
     var $tab_li4 = $('#tab4').find('ul li');
     $tab_li4.click(function(){
