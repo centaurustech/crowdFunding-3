@@ -292,15 +292,15 @@
         });
 
         $('#editBasic').click(function(){
-            $('#editBasic').attr('data-remote', 'editBasicPop.html');
+            $('#editBasic').attr('data-remote', 'editBasicPop.html?a='+ Math.random());
             $('#myModalLabel').html('修改个人信息');
         });
         $('#editService').click(function(){
-            $('#editService').attr('data-remote', 'editServicePop.html');
+            $('#editService').attr('data-remote', 'editServerPop.html?b='+ Math.random());
             $('#myModalLabel').html('服务代理设置');
         });
         $('#editVideo').click(function(){
-            $('#editVideo').attr('data-remote', 'editVideoPop.html');
+            $('#editVideo').attr('data-remote', 'editVideoPop.html?ddd='+ Math.random());
             $('#myModalLabel').html('视频修改');
         });
     });
