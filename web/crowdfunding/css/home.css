@@ -216,18 +216,6 @@ body a{
 	float: left;
 	text-align: left;
 }
-/*.p_num{
-	width: 100px;
-}
-.m_num{
-	width: 157px;
-}
-.ap_num{
-	width: 265px;
-}
-.s_monty{
-	width: 200px;
-}*/
 .pro_con_index{
 	width: 100%;
 	height: auto;
@@ -332,6 +320,13 @@ body a{
 	margin-bottom: 30px;
 	font-size: 16px;
 }
+.all_project{
+	width: 336px;
+	height: 350px;
+}
+.all_project .spt_list_fot{
+	margin-top: 20px;
+}
 .justify{
 	width: 100px;
 	height: 0px;
@@ -345,6 +340,32 @@ body a{
 	color: #282828;
 	padding-left: 10px;
 	padding-top: 18px;
+}
+.spt_list_body{
+	padding: 1px 1px 0px;
+	background: #fff;
+	height: 320px;
+	margin-bottom: -30px;
+	font-family: "Microsoft YaHei"
+}
+.spt_list_body header{
+	padding: 18px 15px;
+	font-size: 30px;
+	color: #000000;
+}
+.spt_list_body label{
+	padding: 5px 15px;
+	font-size: 16px;
+	color: #000000;
+	line-height: 26px;
+	display: block;
+}
+.spt_list_body span{
+	font-size: 14px;
+	padding: 0px 15px;
+	line-height: 26px;
+	color: #999999;
+	display: block;
 }
 .spt_list .spt_list_div p{
 	line-height: 15px;
@@ -517,4 +538,15 @@ body a{
 
 .img-right{
 	margin-right: 15px;
+}
+
+.screening{
+	width: 1112px;
+	margin: 30px auto;
+
+	background: #fff;
+}
+.screening label{
+	font-family: "Microsoft YaHei";
+	font-size: 14px;
 }

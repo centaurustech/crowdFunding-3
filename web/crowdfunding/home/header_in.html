@@ -7,6 +7,7 @@
     <link href="../css/home.css" rel="stylesheet" type="text/css">
     <link href="http://g.tbcdn.cn/sj/wqui/1.0.0/css/sui.min.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="../../framework/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/pop.js"></script>
 </head>
     <style type="text/css">
         .head_div{
@@ -91,6 +92,14 @@
         });
 
     });
+
+    var width = $('#login').offset().left();
+
+    $(".head_div").css('left', width + 260);
+    $(".head_div").css('height', '65px');
+
+    $('#login').remove();
+    $(".head_pop").hide();
 </script>
 </body>
 </html>

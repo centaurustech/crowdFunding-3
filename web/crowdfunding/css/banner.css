@@ -1,35 +1,11 @@
 ﻿*{ margin:0; padding:0; list-style:none;}
-/*.index-main {
-	z-index:55;
-	position:relative;
-	width:980px;
-	margin:0 auto;
-	height:639px;
-}
-.index-main-box {
-	position:relative;
-	display:block;
-	overflow:hidden;
-	height:639px;
-}*/
 #indexslider {
 	position:relative;
-	/*width:1440px;
-	left:50%;
-	margin-left:-720px;
-	height:639px;*/
 }
 .index-img {
-	display:block;
-	/*width:1440px;
-	height:639px;*/
+	/*display:block;*/
 	overflow:hidden;
 }
-/*
-.index-img img {
-	width:1440px;
-	height:639px;
-}*/
 .index-pagination {
 	position:absolute;
 	z-index:66;
@@ -61,7 +37,7 @@
 	z-index:555;
 	display:block;
 	height:3px;
-	background:#038cf6;
+	background:#fff;
 }
 .index-pagination li a div span {
 	position:absolute;
@@ -69,32 +45,62 @@
 	left:0px;
 	height:3px;
 	width:0px;
-	background:#FFF;
+	background:#038cf6;
 }
-/*
-.index-pagination li a div em {
-	position:absolute;
-	display:none;
-	width:27px;
-	height:10px;
-	background:url(../images/car-ico.png) no-repeat;
-	top:-5px;
-	left:1px;
-}*/
-
 .index-pagination li.current a {
 	color:#0b4da2;
 	_color:#c9242b;
 }
+.bannerVideo{
+	width: 1112px;
+	height: 446px;
+	margin: 20px auto;
+	background: #333333;
+}
+.index-img video, .roadVideo img {
+	width: 788px;
+	height: 446px;
+	float: left;
+	border-right: 1px #4b5962 solid;
+	box-shadow:5px 0px 5px #304149;
+	-webkit-box-shadow: 5px 0px 5px #304149;
+}
 
-/* 进度图标*/
-/*.index-pagination li.back {
-	background:url(../images/car-ico.png) no-repeat;
-	display:block;
-	position:absolute;
-	width:27px;
-	height:10px;
-	left:0px;
-	top:4px;
-	z-index:444;
-}*/
+.video_zero{
+	width: 260px;
+	height: 400px;
+	float: left;
+	top: 0px;
+	padding: 50px 20px 0px;
+	right: 10px;
+	position: absolute;
+}
+.video_zero .zero_logo{
+	margin-left: 88px;
+	display: block;
+}
+.video_zero .zeroTitle{
+	margin-top: 135px;
+	text-align: center;
+}
+.video_zero .zero_text{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.video_zero .zero_text span{
+	font-family: "Microsoft YaHei";
+	font-size: 14px;
+	line-height: 25px;
+	color: #cfcfcf;
+	display: block;
+}
+.video_zero .zero_text span div label{
+	font-size: 12px;
+}
+.bannerVideo .zero_text div{
+	width: 105px;
+	margin-left: 40px;
+}
+.video_zero .index-pagination{
+	left: 20px;
+}
