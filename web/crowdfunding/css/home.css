@@ -27,7 +27,7 @@ body a{
 	top: 0px;
 	position: fixed;
 	display: block;
-	background: url(../image/nav_bg.png) !important;
+	background: url(../images/nav_bg.png) !important;
 	border-bottom: 4px #038cfb solid !important;
 	position: fixed;
 	z-index: 2;
@@ -127,7 +127,7 @@ body a{
 	-webkit-border-radius: 50px;
 }
 .ins_bg{
-	background: url("../image/in_icon.png") no-repeat;
+	background: url("../images/in_icon.png") no-repeat;
 }
 .head_pop{
 	width: 138px;
@@ -266,7 +266,7 @@ body a{
 	margin-top: -2px;
 }
 .ok_bg{
-	background: url("../image/ok.png") no-repeat;
+	background: url("../images/ok.png") no-repeat;
 }
 .ok_pos{
 	width: 1112px;
@@ -412,7 +412,7 @@ body a{
 }
 
 .sindex_img_bg{
-	background:url(../image/logo1.png) no-repeat;
+	background:url(../images/logo1.png) no-repeat;
 }
 
 .scom_footer{

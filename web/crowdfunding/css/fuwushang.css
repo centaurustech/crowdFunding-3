@@ -60,7 +60,7 @@ input, button, select, textarea {
 
 .outer{ width:100%; background:#f5f5f5; padding-bottom:30px; }
 
-.banner{ height:187px; background:url(../img/wbanner.jpg) no-repeat top center;}
+.banner{ height:187px; background:url(../images/wbanner.jpg) no-repeat top center;}
 
 .navTab{ width:100%; height:30px; overflow:hidden; background:#515151;}
 
@@ -73,19 +73,19 @@ input, button, select, textarea {
 .logo1 a{ display:block; }
 .tabLb{ width:770px;}
 #menu{ margin-left:210px;}
-#menu li{line-height:30px;text-align:center;cursor:pointer;float:left;padding:0 30px; background:url(../img/libg.jpg) no-repeat top right;  font-size:14px; font-family: "Microsoft YaHei";color:#fff;}
+#menu li{line-height:30px;text-align:center;cursor:pointer;float:left;padding:0 30px; background:url(../images/libg.jpg) no-repeat top right;  font-size:14px; font-family: "Microsoft YaHei";color:#fff;}
 #menu li.se{background:#a7a7a7;font-weight:bold;}
 .con1{ width:770px; background:#fff; padding:80px 0 30px;}
 .conBan{ width:750px; height:244px; margin:0 auto; /*overflow:hidden;*/ position:relative;}
 #img{ width:680px;height:244px; /*overflow:hidden;*/ margin:0 auto; overflow:hidden}
 #img a{ float:left;width:680px;}
 .footscrool{ width:10000px;}
-.perv{ position:absolute; top:110px; left:0; width:56px; height:56px; overflow:hidden; z-index:1; background:url(../img/perv.jpg) no-repeat; cursor:pointer;}
-.next{ position:absolute; top:110px; right:0; width:56px; height:56px; overflow:hidden;z-index:1; background:url(../img/next.jpg) no-repeat; cursor:pointer;}
+.perv{ position:absolute; top:110px; left:0; width:56px; height:56px; overflow:hidden; z-index:1; background:url(../images/perv.jpg) no-repeat; cursor:pointer;}
+.next{ position:absolute; top:110px; right:0; width:56px; height:56px; overflow:hidden;z-index:1; background:url(../images/next.jpg) no-repeat; cursor:pointer;}
 .title1{ width:770px; height:110px; overflow:hidden; margin:40px 0 65px; font-size:14px; color:#545454; font-family: "Microsoft YaHei"; text-align:center;}
 .title1 h2{ font-size:32px; color:#2b2b2b; line-height:50px;}
 .ti-p1{ cursor:pointer;}
-.title1 p span{ display:inline-block; width:13px; height:13px; overflow:hidden; vertical-align:middle; margin-left:3px; background:url(../img/spbg1.jpg) no-repeat;}
+.title1 p span{ display:inline-block; width:13px; height:13px; overflow:hidden; vertical-align:middle; margin-left:3px; background:url(../images/spbg1.jpg) no-repeat;}
 .title2 dl dt a{ display:block;}
 .til-h2{ width:770px; height:65px; line-height:65px; text-align:center; overflow:hidden; border-bottom:1px dashed #939393; font-family: "Microsoft YaHei"; font-size:20px; font-weight:normal; color:#35a3f8;}
 .t2-dl-1{ width:705px; height:135px; overflow:hidden; margin-left:20px; margin-top:50px; }
@@ -103,8 +103,8 @@ input, button, select, textarea {
 .t3-dl dl dt{ width:192px; height:191px; overflow:hidden; padding:10px 19px 0; }
 .dd-2{ height:50px; line-height:50px; overflow:hidden; padding-left:22px; font-size:16px; font-family: "Microsoft YaHei";}
 .dd-3{ height:38px; line-height:38px; overflow:hidden; background:#f5f5f5; padding-left:10px;}
-.dd-3 a{ display:inline-block; width:30px; height:38px; overflow:hidden; font-size:14px; text-align:right; color:#5a5a5a; background:url(../img/a1.jpg) 5px 10px no-repeat;}
-.dd-3 a.dd-a1{ color:#000; background:url(../img/a2.jpg) 5px 10px  no-repeat; margin-left:4px;}
+.dd-3 a{ display:inline-block; width:30px; height:38px; overflow:hidden; font-size:14px; text-align:right; color:#5a5a5a; background:url(../images/a1.jpg) 5px 10px no-repeat;}
+.dd-3 a.dd-a1{ color:#000; background:url(../images/a2.jpg) 5px 10px  no-repeat; margin-left:4px;}
 .title4{ margin-top:50px;}
 .title4 img{ margin:40px auto 0;}
 /*基本end*/
@@ -128,11 +128,11 @@ input, button, select, textarea {
 
 .chenggong ul li.cg-li1{ width:100px; height:30px; overflow:hidden; margin-top:10px; background:#038cf6; color:#fff; line-height:30px; text-align:center;}
 .cg-li2 span{ margin-left:15px;}
-.cg-li3{ width:96px; height:35px; overflow:hidden; background:url(../img/cg1.jpg) no-repeat 0 10px;}
+.cg-li3{ width:96px; height:35px; overflow:hidden; background:url(../images/cg1.jpg) no-repeat 0 10px;}
 
 .cg-list{ border-bottom:none;}
 .cg-a1{ display:block; height:20px; line-height:20px; padding-left:320px; margin-bottom:30px; font-family: "Microsoft YaHei"; font-size:16px; }
-.cg-sp1{ width:8px; height:20px; overflow:hidden; margin-left:5px; background:url(../img/cg2.jpg) no-repeat 0 3px;}
+.cg-sp1{ width:8px; height:20px; overflow:hidden; margin-left:5px; background:url(../images/cg2.jpg) no-repeat 0 3px;}
 /*right*/
 .rz{ width:315px; height:30px; overflow:hidden; /*position:relative;*/}
 .xg{ font-size:14px; color:#fff; line-height:30px; padding:0 6px;}
@@ -161,7 +161,7 @@ input, button, select, textarea {
 .jb-td2 span{ float:left; color:#666666; margin-left:20px;}
 .jb-td2 input.td2-in1{ width:280px;}
 .jb-td2 input.td2-in3{ width:100px;}
-.yz{ width:92px; height:39px; overflow:hidden; margin-top:6px; vertical-align:middle; background:url(../img/yz.jpg) no-repeat;}
+.yz{ width:92px; height:39px; overflow:hidden; margin-top:6px; vertical-align:middle; background:url(../images/yz.jpg) no-repeat;}
 .jb-td2 input.sub{ width:85px; height:35px; overflow:hidden; text-align:center; line-height:35px; margin-top:0; border:none;font-family:"SimHei"; font-size:18px; color:#fff; background:#038cf6;}
 
 .sf{ width:880px; overflow:hidden; margin:30px auto; background:#fff; border-spacing:1px;}
@@ -176,7 +176,7 @@ input, button, select, textarea {
 .input1{width:88px; height:27px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); opacity: 0;
     position: absolute; top:10px; left:0;}
 .input2{color: #0a0a0a; font-size:14px;  background:none; position:absolute; top:15px; left:104px;}
-.xuanze{background: url(../img/xuanze.jpg) no-repeat ;
+.xuanze{background: url(../images/xuanze.jpg) no-repeat ;
     color: #000000;
     display: block; width:88px; height:27px; text-align:center; line-height:27px; text-indent:0}
 
@@ -186,24 +186,24 @@ input, button, select, textarea {
 .ren-dl{ height:80px; overflow:hidden;}
 .ren-dl dt{ float:left; margin-right:10px; display:inline;}
 .ren-dl dd{ float:left; width:165px; height:35px; line-height:35px; overflow:hidden; font-size:14px;font-family: "Microsoft YaHei";}
-.ren-dl dd.ren-dd a{ display:inline-block; width:70px; height:35px; overflow:hidden; padding-left:16px; background:url(../img/fr2.jpg) 0 11px no-repeat; font-size:12px; font-family:"simsun"; color:#038cf6;}
-.ren-dl dd span{ display:inline-block; width:70px;overflow:hidden; line-height:35px; vertical-align:middle; margin-left:10px;text-indent:25px; background:url(../img/fr3.jpg) 0 10px no-repeat; font-size:12px; font-family:"simsun"; color:#038cf6; }
+.ren-dl dd.ren-dd a{ display:inline-block; width:70px; height:35px; overflow:hidden; padding-left:16px; background:url(../images/fr2.jpg) 0 11px no-repeat; font-size:12px; font-family:"simsun"; color:#038cf6;}
+.ren-dl dd span{ display:inline-block; width:70px;overflow:hidden; line-height:35px; vertical-align:middle; margin-left:10px;text-indent:25px; background:url(../images/fr3.jpg) 0 10px no-repeat; font-size:12px; font-family:"simsun"; color:#038cf6; }
 .renzheng1 ul{ width:265px; height:210px; overflow:hidden; margin-top:20px; font-family: "Microsoft YaHei"; color:#828282; }
 .renzheng1 ul li{ height:30px; line-height:30px;/* overflow:hidden;*/}
 .ren-li-1,.ren-li-2{height:30px; line-height:30px;}
 .li1-sp1,.li2-sp1{ display:inline-block; float:right; width:70px; height:30px; line-height:30px; overflow:hidden; vertical-align:middle; font-family:"simsun";text-indent:30px;color:#bcbcbc;}
-.li1-sp1{background:url(../img/fr4.jpg) 0 10px no-repeat;}
-.li2-sp1{ background:url(../img/fr5.jpg) 0 8px  no-repeat;}
-.ren-li-3{ background:url(../img/fr6.jpg) no-repeat 40px 6px;}
+.li1-sp1{background:url(../images/fr4.jpg) 0 10px no-repeat;}
+.li2-sp1{ background:url(../images/fr5.jpg) 0 8px  no-repeat;}
+.ren-li-3{ background:url(../images/fr6.jpg) no-repeat 40px 6px;}
 .ren-li-4 span{ color:#038cf6; padding:0 5px;}
 .renzheng1 ul li.ren-li-5{ height:15px; line-height:15px; overflow:hidden; margin-top:15px;}
-.li-5-a1{ display:inline-block; float:left; width:94px; text-indent:18px; background:url(../img/fr7.jpg) no-repeat;}
-.li-5-a2{ display:inline-block; float:left; width:52px; text-indent:18px; background:url(../img/fr8.jpg) no-repeat;}
-.li-5-a3{ display:inline-block; float:left; width:108px; text-indent:18px; background:url(../img/fr9.jpg) no-repeat;}
+.li-5-a1{ display:inline-block; float:left; width:94px; text-indent:18px; background:url(../images/fr7.jpg) no-repeat;}
+.li-5-a2{ display:inline-block; float:left; width:52px; text-indent:18px; background:url(../images/fr8.jpg) no-repeat;}
+.li-5-a3{ display:inline-block; float:left; width:108px; text-indent:18px; background:url(../images/fr9.jpg) no-repeat;}
 .renzheng1 ul li.ren-li-6{ height:22px;line-height:22px; overflow:hidden; margin-top:25px;}
 .li-6-a1,.li-6-a2{ display:inline-block; float:left; width:58px; height:22px; overflow:hidden;}
-.li-6-a1{ background:url(../img/fr10.jpg) no-repeat;}
-.li-6-a2{ margin-left:10px; background:url(../img/fr11.jpg) no-repeat;}
+.li-6-a1{ background:url(../images/fr10.jpg) no-repeat;}
+.li-6-a2{ margin-left:10px; background:url(../images/fr11.jpg) no-repeat;}
 .li-6-a3{ color:#999999;}
 .renzheng2{ width:315px; height:540px; overflow:hidden; background:#fff; margin-top:30px;}
 .renzheng2 h2{ font-size:20px; height:35px; line-height:35px; overflow:hidden; text-indent:14px; margin-top:20px;}
@@ -224,9 +224,9 @@ table{ width:260px; overflow:hidden; margin:0 auto; line-height:40px; text-align
 .pinglun span{  float:left; display:inline; width:65px; margin-left:15px;}
 .pl-p1{ height:37px; line-height:37px; overflow:hidden; border-bottom:1px solid #e4e4e4; }
 .pl-p1 span{ text-indent:25px;}
-.pl-sp1{ background:url(../img/fr12.jpg) 0 5px no-repeat;}
-.pl-sp2{ background:url(../img/fr13.jpg) 0 5px no-repeat;}
-.pl-sp3{ background:url(../img/fr14.jpg) 0 5px no-repeat;}
+.pl-sp1{ background:url(../images/fr12.jpg) 0 5px no-repeat;}
+.pl-sp2{ background:url(../images/fr13.jpg) 0 5px no-repeat;}
+.pl-sp3{ background:url(../images/fr14.jpg) 0 5px no-repeat;}
 .pl-p2{ height:42px; line-height:42px; overflow:hidden;text-align:center;} 
 .yinxiang{width:255px; height:80px; overflow:hidden; margin:0 auto; border:1px solid #e4e4e4; }
 .yx-p1{ height:35px; line-height:35px; overflow:hidden; border-bottom:1px solid #e4e4e4;font-family: "Microsoft YaHei"; text-indent:18px; }
