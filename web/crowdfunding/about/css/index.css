@@ -1,0 +1,57 @@
+@charset "utf-8";
+ul, ol, p, dt, dd, dl, h1, h2, h3, h4, h5, h6, form,input ,button{padding: 0;margin: 0;}
+img {border: 0;display: block}
+h2,h3,h4{ font-weight:normal}
+li {list-style: none;}
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+.clear {clear: both;}
+a{ cursor:pointer}
+a:hover{ text-decoration:none}
+body {margin: 0;padding: 0;font-size: 14px;font-family: "Microsoft YaHei";color: #545454;background: #efefef;}
+.left {float: left}
+.right {float: right}
+.hide{ display:none}
+
+
+.center{ margin:62px auto; overflow:hidden; border:1px solid #e4e4e4; background:#fff; width:1021px ;}
+.center-left{ width:200px; overflow: hidden; background:#f9f9f9; border-right:1px solid #f2f2f2; height:647px;}
+.about{ height:63px; line-height:73px; border-bottom:1px solid #e2e2e2; overflow:hidden; color:#343434; font-size:20px; text-align: center; font-family:"SimHei"}
+.about-left{ overflow:hidden; text-align:center;}
+.about-left a{ color:#666666; font-size:16px;font-family:"SimHei"; display:block; height:39px; line-height:39px;border-bottom:1px solid #e2e2e2; overflow:hidden}
+.about-left a.ahover{ color:#038cfd}
+.center-right{ width:737px;padding:20px 43px 0 40px; overflow:hidden}
+.cr-1{ overflow:hidden;}
+.lianxi{ display:block; overflow:hidden}
+.bussnus{ margin-top:5px; overflow:hidden}
+.bussnus li{ overflow: hidden; border-top:1px dashed #cacaca;padding-top:10px; color:#343434; margin-top:10px;}
+.bussnus li h3{ font-size:18px;font-family:"SimHei"; overflow:hidden; line-height:30px; width:100%}
+.bussnus li p{ overflow:hidden; line-height:30px; font-size:16px;width:100%}
+.bussnus li p span{ float:left}
+.bussnus li.buss-first{ border-top:none}
+.bussnus li p b{ float:left; background:url(../images/about.jpg) no-repeat; background-position:0 0; width:22px; height:14px; margin:9px 13px 0 0; display:inline}
+.bussnus li p b.b1{background-position:-22px 0; height:18px; margin-top:7px;}
+.bussnus li p b.b2{background-position:-49px 0; height:18px; width:23px; margin:7px 12px 0 0;}
+.bussnus li p b.b3{background-position:-77px 0; height:21px; margin-top:5px;}
+.bussnus li p b.b5{background-position:-123px 0; height:22px; margin-top:4px;}
+.bussnus li p b.b6{background-position:-123px 0; height:22px; margin-top:4px;}
+.bussnus li p b.b6{background-position:0px -24px; height:16px; width:24px; margin:7px 11px 0 0;}
+.bussnus li p b.b7{background-position:-32px -23px; height:21px; width:14px; margin:3px 15px 0 6px;}
+
+.js1{ overflow:hidden; margin-top:15px;}
+.js1-p{ width:248px; color:#343434; font-size:14px;font-family:"SimHei"; line-height:24px;}
+.js1-p b{ font-size:26px;}
+.js1-img{ margin-right:54px; display:inline}
+
+.help{ overflow:hidden; margin:24px 80px 0 16px; height:42px;}
+.help1{ width:504px; height:40px; line-height:40px; overflow:hidden}
+.help1 input{ border:2px solid #b2b2b2; width:475px; height:35px; line-height:35px;padding-left:25px; color:#b1b1b1; font-size:16px;font-family:"SimHei";}
+.serch{ border:none; background:none; width:123px;}
+.hepl-div{ overflow:hidden}
+.hepl-div li{ float:left; width:352px; margin:40px 0 0 16px; display:inline}
+
+.hepl-div li h3{ overflow:hidden; color:#000000; font-size:16px;font-family:"SimHei"; line-height:24px;}
+
+.hepl-div li p{ overflow:hidden; }
+.hepl-div li p a{color:#0088cc; font-size:12px; margin-right:10px; float:left; display:inline; line-height:24px;}
+
