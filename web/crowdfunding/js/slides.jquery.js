@@ -337,33 +337,33 @@
 				},option.autoHeightSpeed);
 			}
 			
-			// checks if image is loaded
+			// checks if images is loaded
 			if (option.preload && control.find('img:eq(' + start + ')').length) {
-				// adds preload image
+				// adds preload images
 				$('.' + option.container, elem).css({
 					background: 'url(' + option.preloadImage + ') no-repeat 50% 50%'
 				});
 				
-				// gets image src, with cache buster
+				// gets images src, with cache buster
 				var img = control.find('img:eq(' + start + ')').attr('src') + '?' + (new Date()).getTime();
 				
-				// check if the image has a parent
+				// check if the images has a parent
 				if ($('img', elem).parent().attr('class') != 'slides_control') {
-					// If image has parent, get tag name
+					// If images has parent, get tag name
 					imageParent = control.children(':eq(0)')[0].tagName.toLowerCase();
 				} else {
-					// Image doesn't have parent, use image tag name
+					// Image doesn't have parent, use images tag name
 					imageParent = control.find('img:eq(' + start + ')');
 				}
 
-				// checks if image is loaded
+				// checks if images is loaded
 				control.find('img:eq(' + start + ')').attr('src', img).load(function() {
-					// once image is fully loaded, fade in
+					// once images is fully loaded, fade in
 					control.find(imageParent + ':eq(' + start + ')').fadeIn(option.fadeSpeed, option.fadeEasing, function(){
 						$(this).css({
 							zIndex: 5
 						});
-						// removes preload image
+						// removes preload images
 						$('.' + option.container, elem).css({
 							background: ''
 						});
@@ -503,8 +503,8 @@
 	
 	// default options
 	$.fn.slides.option = {
-		preload: false, // boolean, Set true to preload images in an image based slideshow
-		preloadImage: '/templates/images/loading.gif', // string, Name and location of loading image for preloader. Default is "/img/loading.gif"
+		preload: false, // boolean, Set true to preload images in an images based slideshow
+		preloadImage: '/templates/images/loading.gif', // string, Name and location of loading images for preloader. Default is "/img/loading.gif"
 		container: 'slides_container', // string, Class name for slides container. Default is "slides_container"
 		generateNextPrev: false, // boolean, Auto generate next/prev buttons
 		next: 'next', // string, Class name for next button
@@ -520,7 +520,7 @@
 		slideEasing: '', // string, must load jQuery's easing plugin before http://gsgd.co.uk/sandbox/jquery/easing/
 		start: 1, // number, Set the speed of the sliding animation in milliseconds
 		effect: 'slide', // string, '[next/prev], [pagination]', e.g. 'slide, fade' or simply 'fade' for both
-		crossfade: false, // boolean, Crossfade images in a image based slideshow
+		crossfade: false, // boolean, Crossfade images in a images based slideshow
 		randomize: false, // boolean, Set to true to randomize slides
 		play: 0, // number, Autoplay slideshow, a positive number will set to true and be the time between slide animation in milliseconds
 		pause: 0, // number, Pause slideshow on click of next/prev or pagination. A positive number will set to true and be the time of pause in milliseconds

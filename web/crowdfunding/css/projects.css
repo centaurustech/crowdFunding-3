@@ -25,7 +25,7 @@ body{
 	text-align:  center;
 }
 .pro_nav_bg{
-	background: url("../image/pro_nav.png") no-repeat;
+	background: url("../images/pro_nav.png") no-repeat;
 }
 .pro_nav_postion{
 	width: 173px;
@@ -659,7 +659,7 @@ body{
 	-webkit-border-radius: 3px;
 }
 /*.ins_bg{*/
-	/*background: url("../image/in_icon.png") no-repeat;*/
+	/*background: url("../images/in_icon.png") no-repeat;*/
 /*}*/
 .ins_pos{
 	width: 28px;
@@ -728,14 +728,14 @@ body{
 	height: 18px;
 	float: left;
 	margin-right: 2px;
-	background: url("../image/li_open.png");
+	background: url("../images/li_open.png");
 }
 .currentDd div, .currentDd div{
 	width: 18px;
 	height: 18px;
 	float: left;
 	margin-right: 2px;
-	background: url("../image/li_colse.png");
+	background: url("../images/li_colse.png");
 }
 .currentDd, .currentDt, .subNav:hover, .subNav:focus{
 	color: #038cf6;
@@ -1037,7 +1037,7 @@ ul.timeline {
 }
 ul.timeline li {
 	position: relative;
-	background: url("../image/version_dot_alt.png") repeat-y scroll 90px 0 transparent;
+	background: url("../images/version_dot_alt.png") repeat-y scroll 90px 0 transparent;
 	overflow: hidden;
 }
 ul.timeline li .timeM {
@@ -1062,7 +1062,7 @@ ul.timeline li .timeY {
 }
 ul.timeline li .number {
 	position: absolute;
-	background: url("../image/version_dot.png") no-repeat scroll 0 0 transparent;
+	background: url("../images/version_dot.png") no-repeat scroll 0 0 transparent;
 	width: 56px;
 	height: 56px;
 	left: 83px;
@@ -1115,7 +1115,7 @@ ul.timeline li .number {
 	color: #343434;
 }
 .membership_bg{
-	background: url(../image/membership.png) no-repeat;
+	background: url(../images/membership.png) no-repeat;
 }
 .m_tou{
 	width: 102px;
