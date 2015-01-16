@@ -1182,10 +1182,10 @@ ul.timeline li .number {
 	width: 650px;
 	padding: 20px 20px;
 }
-.bank input{
+.bank input, .chooseBank input{
 	display: inline-block;
 }
-.balance span, .bank span{
+.balance span, .bank span, .chooseBank span{
 	font-family: "SimHei";
 	font-size: 16px;
 }
@@ -1193,13 +1193,22 @@ ul.timeline li .number {
 	font-size: 28px;
 	color: #1cc487;
 }
-.bank .radio-pretty{
+.bank .radio-pretty, .chooseBank .radio-pretty{
 	line-height: 50px !important;
 }
 .bank .radio-pretty img{
 	width: 196px;
 	height: 40px;
 	border: 1px #b5b5b5 solid !important;
+}
+.chooseBank .radio-pretty img{
+	width: 192px;
+	height: 40px;
+	border: 1px #dbdbdb solid !important;
+}
+.chooseFooter{
+	padding: 20px 0px;
+	border-top: 1px #CCCCCC dashed;
 }
 .arrow1{
 	width: 0;

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+</head>
+<style type="text/css">
+    .modal-header{
+        margin-left: 20px;
+        padding: 20px 0px !important;
+        background: #fff !important;
+        border-bottom: 1px #CCCCCC solid;
+    }
+    .modal-header span{
+        font-family: "SimHei";
+        font-size: 22px;
+        color: #000000;
+    }
+    .sui-close{
+        margin-top: -5px;
+    }
+    #myModal{
+        width: 760px;
+        height: auto;
+        margin-left: -380px;
+        border: 12px rgba(84,84,84,0.6) solid;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+    }
+    .dropdown-toggle{
+        width: 0px;
+    }
+</style>
+<body>
+<div>
+    <form class="sui-form form-horizontal">
+        <div class="chooseBank">
+            <div class="controls">
+                <span class="sui-dropdown dropdown-bordered select">
+                    <span class="dropdown-inner">
+                        <a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <input value="hz" name="city" type="hidden"><i class="caret"></i><span>浙江省</span>
+                        </a>
+                      <ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="hz">杭州</a></li>
+                      </ul>
+                    </span>
+                    <span class="label_size_1">开户银行</span>
+                </span>
+            </div><br><br>
+            <div class="control-group">
+                <div class="controls">
+                    <label data-toggle="radio" class="radio-pretty inline checked">
+                        <input type="radio" checked="checked" name="radio">
+                        <span>
+                            <img src="../images/bank_1.png">
+                        </span>
+                    </label>
+                    <label data-toggle="radio" class="radio-pretty inline checked">
+                        <input type="radio" checked="checked" name="radio">
+                        <span>
+                            <img src="../images/bank_2.png">
+                        </span>
+                    </label>
+                    <label data-toggle="radio" class="radio-pretty inline checked">
+                        <input type="radio" checked="checked" name="radio">
+                        <span>
+                            <img src="../images/bank_3.png">
+                        </span>
+                    </label><br>
+                    <label data-toggle="radio" class="radio-pretty inline checked">
+                        <input type="radio" checked="checked" name="radio">
+                        <span>
+                            <img src="../images/bank_4.png">
+                        </span>
+                    </label>
+                    <label data-toggle="radio" class="radio-pretty inline checked">
+                        <input type="radio" checked="checked" name="radio">
+                        <span>
+                            <img src="../images/bank_2.png">
+                        </span>
+                    </label>
+                    <label data-toggle="radio" class="radio-pretty inline checked">
+                        <input type="radio" checked="checked" name="radio">
+                        <span>
+                            <img src="../images/bank_3.png">
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="chooseFooter">
+                <div class="control-group">
+                    <div class="controls">
+                        <button id="next" type="submit" class="sui-btn btn-custom btn-width-3 sui-btn-radius">
+                            <span class="label_1">下一步</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

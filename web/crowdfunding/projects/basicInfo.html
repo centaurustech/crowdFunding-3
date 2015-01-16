@@ -25,7 +25,26 @@
 <body>
 <!-- 导航 -->
 <div class="container">
-    <object id="headerObject" data="../home/header.html"></object>
+    <!--<object id="headerObject" data="../home/header.html?index=project"></object>-->
+    <div id="topnav" class="navbar-fixed-top">
+        <div class="nav">
+            <a href="#" class="logo">
+                <img src="../images/logo.png">
+            </a>
+            <ul class="nav-ul">
+                <li id="index"><a href="../home/index.html" target="_parent">首页</a></li>
+                <li id="browse"><a href="../home/browseProject.html" target="_parent">浏览项目</a></li>
+                <li class="onNav" id="project"><a href="../projects/basicInfo.html" target="_parent">发起项目</a></li>
+                <a class="col_text">全国</a>
+                <a class="col_text">[城市切换]</a>
+            </ul>
+            <div id="login">
+                <a href="../login/login.html" target="_parent">登录</a>
+                <span>|</span>
+                <a href="../login/register.html" target="_parent">注册</a>
+            </div>
+        </div>
+    </div>
     <div style="height: 65px;"></div>
     <div class="pro_con" style="width: 808px; padding-bottom: 20px; padding-top: 100px;">
         <div class="pro_nav">

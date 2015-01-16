@@ -11,12 +11,25 @@
 <script type="text/javascript" src="js/jquery.placeholder.min.js"></script></head>
 <script type="text/javascript">
 $(function(){
-	$(".about-left a").eq(0).addClass("ahover");
+//	$(".about-left a").eq(0).addClass("ahover");
 	$(".about-left a").mouseover(function(){
 		$(".about-left a").removeClass("ahover");
 		$(this).addClass("ahover");
 		$(".center-right .cr-1").eq($(this).index()).show().siblings().hide();	
 	})
+
+    var t = gtt('indexPos');
+    $('.about-left').find('.about_' + t).addClass("ahover");
+    $(".center-right .cr-1").eq(t).show().siblings().hide();
+
+    function gtt (name) {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    }
 	})
 </script>
 </head>
@@ -28,10 +41,10 @@ $(function(){
     	<div class="center-left left">
         	<h2 class="about">关于我们</h2>
             <div class="about-left">
-            	<a>- 公司简介</a>
-                <a>- 联系我们</a>
-                <a>- 帮助中心</a>
-                <a>- 新手指引</a>
+            	<a class="about_0">- 公司简介</a>
+                <a class="about_1">- 联系我们</a>
+                <a class="about_2">- 帮助中心</a>
+                <a class="about_3">- 新手指引</a>
             </div>
         </div>
         <div class="center-right right">
