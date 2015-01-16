@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>登录</title>
+<title>修改密码</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <link href="css/index.css" type="text/css" rel="stylesheet" />
@@ -130,57 +130,10 @@ $(function(){
 
             </script>
    		<div class="right center-right">
-        	<!--注册页面-->
-        	<div class="c-right4" style="display:none">
-            	<a class="logo"><img src="images/logo.jpg" width="209" height="58"  /></a>
-                <form>
-                	<ul class="form1">
-                		<li class="input1"><input placeholder="电话号" type="text"/></li>
-                        <li class="input1"><input placeholder="密码" type="password" name="password" /></li>
-                        <li class="input1"><input placeholder="重复密码" type="password" name="password"/></li>
-                        <li class="input2">
-                        	<div class="yzm"><input placeholder="验证码"/></div><img class="yzm-img right" src="images/yzm.jpg" width="170" height="46" />
-                        </li>
-                    </ul>
-                    <div class="pdrt">
-                        <button class="login login2"></button>
-                        <div class="login-bottom">
-                            <a class="left sinc" href="">微博登陆</a>
-                            <a class="left qq" href="">QQ登陆</a>
-                            <p class="right">已有账号<a href="">登陆</a></p>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <!--注册页面-->
-            
-            <!--登录页面-->
-            <div class="c-right4" style="display:none">
-            	<a class="logo"><img src="images/logo.jpg" width="209" height="58"  /></a>
-                <form>
-                	<ul class="form1">
-                		<li class="input1"><input placeholder="电话号" type="text"/></li>
-                        <li class="input1"><input placeholder="密码" type="password" name="password" /></li>
-                        <li class="input2">
-                        	<div class="yzm"><input placeholder="验证码"/></div><img class="yzm-img right" src="images/yzm.jpg" width="170" height="46" />
-                        </li>
-                    </ul>
-                    <div class="pdrt">
-                        <button class="login login2"></button>
-                        <div class="login-bottom">
-                            <a class="left sinc" href="">微博登陆</a>
-                            <a class="left qq" href="">QQ登陆</a>
-                            <p class="right">已有账号<a href="">登陆</a></p>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <!--登录页面-->
-            
             <!--修改密码-->
-            <div class="c-right4" style="display:none" >
+            <div class="c-right4" id="updatePwd">
             	<a class="logo"><img src="images/logo.jpg" width="209" height="58"  /></a>
-                <form>
+                <form action="success.html">
                 	<ul class="form1 form12">
                 		<li class="input1 phone">电话号   15578177777</li>
                         <li class="input1"><input placeholder="密码" type="password" name="password" /></li>
@@ -191,35 +144,13 @@ $(function(){
                         <div class="login-bottom">
                             <a class="left sinc" href="">微博登陆</a>
                             <a class="left qq" href="">QQ登陆</a>
-                            <p class="right">已有账号<a href="">登陆</a></p>
-                        </div>
+                            <p class="right">已有账号<a href="login.html" target="_parent">登陆</a></p></div>
                     </div>
                 </form>
             </div>
             <!--修改密码-->
-            
-            <!--找回密码-->
-            <div class="c-right4" >
-            	<a class="logo"><img src="images/logo.jpg" width="209" height="58"  /></a>
-                <form>
-                	<ul class="form1 form3">
-                		<li class="input1"><input placeholder="电话号" type="text"/></li>
-                        <li class="input2">
-                        	<div class="yzm4"><input placeholder="验证码"/></div><span class="send">发送验证码</span>
-                        </li>
-                    </ul>
-                    <div class="pdrt">
-                        <button class="login login4"></button>
-                        <div class="login-bottom">
-                            <a class="left sinc" href="">微博登陆</a>
-                            <a class="left qq" href="">QQ登陆</a>
-                            <p class="right">已有账号<a href="">登陆</a></p>
-                        </div>
-                    </div>
-                </form>
-            </div>
              <!--找回密码-->
-        	<div class="c-right4" style="display:none">
+        	<div class="c-right4">
             	<a class="logo"><img src="images/logo.jpg" width="209" height="58"  /></a>
                 <p class="gongxi">恭喜您注册成功！</p>
                 <p class="minus">5秒跳转到登陆界面</p>

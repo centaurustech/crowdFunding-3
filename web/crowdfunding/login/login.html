@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>登录</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link href="css/index.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script></head>
+<script type="text/javascript">
+$(function(){
+	$(".input1 input").focus(function(){
+		$(this).addClass("inpudd");
+		$(this).parent(".input1").addClass("inpee");
+	}).blur(function(){
+		$(this).removeClass("inpudd");	
+		$(this).parent(".input1").removeClass("inpee");	
+	});
+	$(".yzm input").focus(function(){
+		$(this).addClass("inner");
+		$(this).parent(".yzm").addClass("yzm1");
+	}).blur(function(){
+		$(this).removeClass("inner");	
+		$(this).parent(".yzm").removeClass("yzm1");	
+	});
+	$(".yzm4 input").focus(function(){
+		$(this).addClass("inner1");
+		$(this).parent(".yzm4").addClass("ym1");
+	}).blur(function(){
+		$(this).removeClass("inner1");	
+		$(this).parent(".yzm4").removeClass("ym1");	
+	});
+
+})
+</script>
+<body>
+	<div class="center">
+   		<div class="left center-left"  id="flashBg">
+        	<div id="flashLine">
+                    <div id="flash">
+                        <a href="" target="_blank" id="flash1"  style="display: block; "><img src="images/bj1.jpg" width="431" height="484" /></a>
+                        <a href="" target="_blank" id="flash2"  style="display: none; "><img src="images/bj1.jpg" width="431" height="484" /></a>
+                        <a href="" target="_blank" id="flash3"  style="display: none; "><img src="images/bj1.jpg" width="431" height="484" /></a>
+                        <a href="" target="_blank" id="flash4"  style="display: none; "><img src="images/bj1.jpg" width="431" height="484" /></a>
+                        
+                    </div>
+                    <div class="flash_bar">
+                            <div class="dq" id="f1" onclick="changeflash(1)"></div>
+                            <div class="no" id="f2" onclick="changeflash(2)"></div>
+                            <div class="no" id="f3" onclick="changeflash(3)"></div>
+                            <div class="no" id="f4" onclick="changeflash(4)"></div>
+                        </div>
+            </div>
+        </div> 
+        <script type="text/javascript">
+
+                var currentindex = 1;
+
+                $("#flashBg").css("background-color", $("#flash1").attr("name"));
+
+                function changeflash(i) {
+
+                    currentindex = i;
+
+                    for (var j = 1; j <= 4; j++) {
+
+                        if (j == i) {
+
+                            $("#flash" + j).fadeIn("normal");
+
+                            $("#flash" + j).css("display", "block");
+
+                            $("#f" + j).removeClass();
+
+                            $("#f" + j).addClass("dq");
+
+                            $("#flashBg").css("background-color", $("#flash" + j).attr("name"));
+
+                        } else {
+
+                            $("#flash" + j).css("display", "none");
+
+                            $("#f" + j).removeClass();
+
+                            $("#f" + j).addClass("no");
+
+                        }
+
+                    }
+
+                }
+
+                function startAm() {
+
+                    timerID = setInterval("timer_tick()", 5000);
+
+                }
+
+                function stopAm() {
+
+                    clearInterval(timerID);
+
+                }
+
+                function timer_tick() {
+
+                    currentindex = currentindex >= 4 ? 1 : currentindex + 1;
+
+                    changeflash(currentindex);
+
+                }
+
+                $(document).ready(function() {
+
+                    $(".flash_bar div").mouseover(function() {
+
+                        stopAm();
+
+                    }).mouseout(function() {
+
+                        startAm();
+
+                    });
+
+                    startAm();
+
+                });
+
+            </script>
+   		<div class="right center-right">
+
+            <!--登录页面-->
+            <div class="c-right4">
+            	<a class="logo"><img src="images/logo.jpg" width="209" height="58"  /></a>
+                <form>
+                	<ul class="form1">
+                		<li class="input1"><input placeholder="电话号" type="text"/></li>
+                        <li class="input1"><input placeholder="密码" type="password" name="password" /></li>
+                        <li class="input2">
+                        	<div class="yzm"><input placeholder="验证码"/></div><img class="yzm-img right" src="images/yzm.jpg" width="170" height="46" />
+                        </li>
+                    </ul>
+                    <div class="pdrt">
+                        <button class="login login2"></button>
+                        <div class="login-bottom">
+                            <a class="left sinc" href="">微博登陆</a>
+                            <a class="left qq" href="">QQ登陆</a>
+                            <p class="right register"><a href="register.html">注册</a>&nbsp;&nbsp;<a href="forgetPwd.html">忘记密码?</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--登录页面-->
+        </div>
+    </div>
+<script type="text/javascript">
+	jQuery('input[placeholder]').placeholder();
+</script>
+</body>
+</html>                 

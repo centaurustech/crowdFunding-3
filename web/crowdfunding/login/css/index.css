@@ -12,14 +12,14 @@ body {margin: 0;padding: 0;font-size: 14px;font-family: "Microsoft YaHei";color:
 .left {float: left}
 .right {float: right}
 .hide{ display:none}
-
+.register a{font-size: 12px !important;}
 .center{ width:862px; height:484px; overflow:hidden; margin:10% auto 0; }
 .center-left{ width:431px; overflow:hidden; text-align:center; position:relative;height:484px;}
 
 .center-right{ width:431px; overflow:hidden;height:484px; background:url(../images/bj2.jpg) no-repeat}
 
 
-.c-right4{ margin-top:55px; overflow: hiddenfont-family:"SimHei"; position:relative;height:430px;}
+.c-right4{ margin-top:55px; overflow: hidden;font-family:"SimHei"; position:relative;height:430px;}
 .logo{ width:209px; display:block; margin:0 auto; overflow:hidden}
 .gongxi{ color:#666666; font-size:36px; text-align:center;font-family:"SimHei"; margin-top:90px; overflow: hidden}
 .minus{ color:#979797; font-size:24px;font-family:"SimHei"; text-align:center; margin-top:43px}
