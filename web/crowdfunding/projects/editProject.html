@@ -69,8 +69,6 @@
                 <ul class="tab_menu">
                     <li class="selected_2"><a class="a_decoration" href="#"><span class="label_6">项目介绍</span></a></li>
                     <li><a class="a_decoration" href="#"><span class="label_6">路演展示</span></a></li>
-                    <li><a class="a_decoration" href="#"><span class="label_6">话题讨论</span></a></li>
-                    <li><a class="a_decoration" href="#"><span class="label_6">参与成员</span></a></li>
                     <div class="share jiathis_style_32x32">
                         <a href="http://www.jiathis.com/share" class="jiathis a_decoration"><img src="../images/share.png">
                             <span class="label_6">分享</span>
@@ -142,7 +140,7 @@
                             </div>
                         </div>
                         <div class="tab_box2">
-                            <div class="pro_tab">
+                            <div class=" pro_tab">
                                 <div id="tab3">
                                     <ul class="tab_menu">
                                         <li class="selected_3"><a class="a_decoration" href="#"><span class="label_9">插入视频</span></a></li>
@@ -160,13 +158,28 @@
                                     <div>
                                         <textarea id="editor" style="width:645px;height:415px;"></textarea>
                                     </div>
-                                    <div class="tab_hide">我的项目</div>
+                                    <div class="tab_hide">
+                                        <div style="overflow:hidden; border: 2px #dcdcdc dashed; width:664px; height: 307px;margin: 20px auto;">
+
+                                            <div class="controls" style="text-align: center; display: block; margin-top: 80px;">
+                                                <img src="../images/add_video.png">
+                                            </div>
+                                            <div class="controls">
+                                                <span class="input-file sui-btn-1 sui-btn-radius btn-custom" style="padding: 15px; width: 158px; border: 1px #ccc solid; font-size: 16px;">
+                                                    点击选择文件<input id="fileupload" type="file" name="files[]" multiple style=" width: 158px; height: 50px;">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
-                            <div class="tab_hide">路演展示</div>
-                            <div class="tab_hide">话题讨论</div>
-                            <div class="tab_hide">参与成员</div>
+                            <div class="tab_hide pro_tab">
+                                <video width="636" height="480" controls="controls" style="margin-left: 15px;">
+                                    <source src="../video/movie.mp4" type="video/mp4">
+                                    <source src="../video/movie.ogg" type="video/ogg">
+                                </video>
+                            </div>
                         </div>
 
                     </div>

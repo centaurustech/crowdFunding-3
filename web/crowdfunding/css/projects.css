@@ -349,6 +349,58 @@ body{
 	box-shadow:0px 0px 5px #f2f2f2;
 	-webkit-box-shadow: 0px 0px 5px #f2f2f2;
 }
+.topics{
+	padding: 20px 50px;
+	font-size: 14px;
+	font-family: "SimSun";
+}
+.topics span{
+	float: left;
+}
+.topics a{
+	float: right;
+}
+.topics_div{
+	text-align: left;
+	padding: 30px 50px;
+}
+.topics_div img{
+	float: left;
+}
+.topicsDiv_body{
+	width: 80%;
+	float: left;
+	height: 90px;
+	text-align: left;
+}
+.topics_bg{
+	background: url("../images/share.png") no-repeat;
+	width: 60px;
+	height: 22px;
+	margin-top: -25px;
+	margin-left:260px;
+	text-align: right;
+}
+.topics_div label{
+	font-size: 16px;
+	line-height: 30px;
+	margin-left: 20px;
+}
+.tooltips_div span{
+	font-size: 14px;
+	line-height: 30px;
+}
+.sendMail{
+	width:670px;
+	margin-top: 70px;
+	margin-left: 30px;
+	text-align: left;
+	padding-bottom: 20px;
+	border-bottom: 1px #CCCCCC dashed;
+}
+.sendMail label{
+	margin-left: 40px;
+}
 .l{
 	height: 10px;
 }
