@@ -38,4 +38,11 @@ $(document).ready(function(){
         $('div.tab_box > div').eq(index).show().siblings().hide();
         $('#subNavLi').text($(this).text());
     });
+
+    var $tab_li6 = $('#tab6').find('ul li');
+    $tab_li6.click(function(){
+        $(this).addClass("selected_6").siblings().removeClass("selected_6");
+        var index = $tab_li6.index(this);
+        $('div.tab_box6 > div').eq(index).show().siblings().hide();
+    });
 });

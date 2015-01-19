@@ -1,0 +1,120 @@
+.scom_footer{
+	width: 100%;
+	height: auto;
+	clear:both;
+	background: #363636;
+}
+.sf_contact{
+	width: 1042px;
+	height: auto;
+	margin: 0 auto;
+	font-size: 18px;
+	padding: 30px 10px 10px;
+	overflow: hidden;
+}
+.sf_contact a{
+	margin-right: 10px;
+}
+.sf_contact span{
+	line-height: 25px;
+}
+.sf_contact a, .sf_contact a:hover, .sf_contact a:focus{
+	text-decoration: none;
+}
+.sn_con_text{
+	padding-top: 20px;
+	width: 110px;
+	height: 40px;
+	color: #fff;
+	font-size: 28px;
+	padding-bottom: 10px;
+}
+.sf_links_top{
+	width: 100%;
+	height: 2px;
+	border-bottom: 1px #a9a9a9 solid;
+	-moz-box-shadow:0px 0px 5px #121212 inset;
+	-webkit-box-shadow:0px 0px 5px #121212 inset;
+	box-shadow:0px 0px 5px #121212 inset;
+}
+.sf_links{
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.sn_con_center{
+	width: 1112px;
+	margin: 0 auto;
+	padding: 25px 20px 0px;
+	overflow: hidden;
+	text-align: center;
+}
+.sn_con_center img{
+	border: none;
+	margin: 0 5px;
+}
+.sn_con_left{
+	float: left;
+}
+
+.sn_con_right{
+	float: right;
+}
+.sf_contact .sn_con_left a{
+	margin-left: 10px;
+}
+.sf_contact .sn_con_left a .label{
+	font-size: 16px;;
+}
+.sf_contact .sn_con_left .label{
+	font-size: 12px;;
+}
+.sn_con_center .btn{
+	padding: 2px 12px;
+	font-size: 12.5px;
+	border-radius: 0px;
+}
+
+.sindex_img_bg{
+	background:url(../images/logo1.png) no-repeat;
+}
+
+.sina{
+	width: 90px;
+	height: 50px;
+	float: left;
+	background-position: -30px -420px;
+}
+.qq{
+	width: 85px;
+	height: 50px;
+	float: left;
+	background-position: -115px -420px;
+}
+.wechat{
+	width: 70px;
+	height: 50px;
+	float: left;
+	background-position: -200px -420px;
+}
+.custom{
+	width:90px;
+	height: 50px;
+	float: left;
+	background-position: -265px -420px;
+}
+.label_1 {
+	font-size: 16px !important;
+	font-weight: 100 !important;
+	color: #ffffff !important;
+}
+
+.label_0 {
+	font-size: 12.5px !important;
+	font-weight: 100 !important;
+	color: #ffffff !important;
+}
+
+.img-responsive{
+	margin: 1px;
+}

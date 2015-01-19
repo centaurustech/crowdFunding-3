@@ -328,6 +328,38 @@ body{
 	overflow: hidden;
 	border-bottom: 1px #cfcfcf dashed;
 }
+.v_comment{
+	padding: 35px 30px;
+	overflow: hidden;
+	text-align: left;
+}
+.vc_title{
+	font-size: 18px;
+	line-height: 30px;
+}
+.vc_publish{
+	margin-top: 10px;
+}
+.vc_publish img{
+	width: 52px;
+	height: 52px;
+	float: left;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-right: 15px;
+}
+.vc_publish textarea{
+	width: 584px;
+	float: left;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px #cccccc solid;
+	margin-bottom: 20px;
+}
+.vc_publish .jiathis_style_24x24{
+	margin-left: 180px;
+	margin-right: 10px;
+}
 .pro_tab{
 	width: 705px;
 	height: auto;
@@ -992,6 +1024,45 @@ body{
 .selected_4{
 	border-bottom: 3px #038cf6 solid;
 }
+
+#tab6{
+	height: 35px;
+	padding: 0px ;
+	margin-top: 20px;
+	text-align: center;
+}
+#tab6 .tab_menu{
+	text-align: center;
+	overflow: hidden;
+	border-bottom: 1px #cccccc solid;
+}
+#tab6 .tab_menu li{
+	width: 94px;
+	padding: 5px 0px 3px;
+	text-align: center;
+	float: left;
+	list-style: none;
+}
+.tab_box6{
+	height: 423px;
+}
+.tab_box6 .topics_div{
+	padding: 10px;
+	overflow: hidden;
+	border-bottom: 1px #cccccc solid;
+}
+.tab_box6 .topics_div .topicsDiv_body label{
+	font-size: 12px;
+	line-height: 20px;
+}
+.tab_box6 .topicsDiv_body img{
+	width: 12px;
+	height: 12px;
+	margin: 4px -15px 0px 5px;
+}
+.selected_6{
+	border-bottom: 3px #038cf6 solid;
+}
 .dyn_div{
 	width: auto;
 	overflow: hidden;
@@ -1084,6 +1155,73 @@ body{
 }
 
 /* 时间轴 start */
+
+.timeline_start{
+	margin-left: 83px;
+}
+.timeline_end{
+	margin-left: 109px;
+}
+.tab_box2 .timeline li{
+	line-height: 28px;
+	padding:50px 50px 50px 0px;
+	margin-left: 20px;
+}
+.tab_box2 .timeline li {
+	background: url("../images/timeLine_2.png") repeat-y scroll 90px 0 transparent;
+}
+.tab_box2 .timeline li .number {
+	left: 84px;
+	background: url("../images/timeLine_1.png") no-repeat scroll 0 0 transparent;
+}
+.tab_box2 .timeline li .timeY{
+	font-size: 30px;
+	width: 90px;
+	top: 25px;
+	left: 10px;
+}
+.tab_box2 .timeline li .timeline_text .arrow{
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 8px solid #f3f3f3;
+	margin-left: 67px;
+	margin-top: 60px;
+	font-size: 0;
+	line-height: 0;
+}
+.timeline_text{
+	width: 500px;
+	padding: 15px;
+	background: #f3f3f3;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-left: 110px;
+	margin-top: -20px;
+}
+.timeline_text img{
+	width: 70px;
+	height: 70px;
+	float: left;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+}
+.timeline_title{
+	margin-top: 5px;
+	border-bottom: 1px #adadad dashed;
+}
+.timeline_body{
+	padding-top: 5px;
+	font-size: 14px;
+	border-top: 1px #fff dashed;
+}
+.timeline_body label{
+	line-height: 20px;
+}
+.timeline_title, .timeline_body{
+	margin-left: 20px;
+}
 ul.timeline {
 	list-style-type: none;
 }
@@ -1116,7 +1254,7 @@ ul.timeline li .number {
 	position: absolute;
 	background: url("../images/version_dot.png") no-repeat scroll 0 0 transparent;
 	width: 56px;
-	height: 56px;
+	height:66px;
 	left: 83px;
 	text-align: center;
 	color: #fff;
